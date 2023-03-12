@@ -8,7 +8,7 @@ import App from './App';
 
 
 ReactDOM.render(
-  <Router >
+  <Router basename='/datamotus'>
     <App />
   </Router>,
   document.getElementById("root")
