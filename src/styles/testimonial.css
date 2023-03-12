@@ -1,0 +1,36 @@
+
+.slider__content-top{
+    margin-top: 150px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.slider__wrapper{
+    
+    width: 70%;
+    margin: auto;
+}
+
+.slider__item {
+    background: var(--testimonial-bg);
+    padding: 40px 30px;
+    border-radius: .0.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+
+.customer__details {
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1rem;
+    margin-top: 40px;
+}
+
+.customer__name {
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 500;
+}
