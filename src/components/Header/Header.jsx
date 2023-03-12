@@ -8,7 +8,7 @@ const nav__links =[
     },
     
     {
-        path: '/projects',
+        path: '/datamotus/projects',
         display: 'Projects'
     },
 
