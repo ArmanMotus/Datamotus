@@ -35,7 +35,7 @@ function App() {
         <Header theme={theme} toggleTheme={toggleTheme} />
       </section>
       <Routes>
-        <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route exact path="/" element={<Home theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/projects" element={<Projects theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/services" element={<Services theme={theme} toggleTheme={toggleTheme}/>} />
