@@ -3,38 +3,38 @@ import logo from '../../../src/logo-cdr.svg'
 import './header.css'
 const nav__links =[
     {
-        path: '/datamotus',
+        path: '#/datamotus',
         display: 'Home'
     },
     
     {
-        path: '/datamotus/projects',
+        path: '#/projects',
         display: 'Projects'
     },
 
     {
-        path: '/about',
+        path: '#/about',
         display: 'About'
     },
     
     {
-        path: '/services',
+        path: '#/services',
         display: 'Services'
     },
 
     {
-        path: '/trainings',
+        path: '#/trainings',
         display: 'Trainings'
     },
     
     
     {
-        path: '/blog',
+        path: '#/blog',
         display: 'Blog'
     },
 
     {
-        path: '/contact',
+        path: '#/contact',
         display: 'Contact us'
     },
 ]

@@ -35,8 +35,8 @@ function App() {
         <Header theme={theme} toggleTheme={toggleTheme} />
       </section>
       <Routes>
-        <Route exact path="/datamotus" element={<Home theme={theme} toggleTheme={toggleTheme}/>} />
-        <Route path="/datamotus/projects" element={<Projects theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route path="/datamotus" element={<Home theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route path="/projects" element={<Projects theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/services" element={<Services theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/trainings" element={<Trainings theme={theme} toggleTheme={toggleTheme}/>} />
