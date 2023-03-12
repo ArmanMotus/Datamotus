@@ -3,7 +3,7 @@ import logo from '../../../src/logo-cdr.svg'
 import './header.css'
 const nav__links =[
     {
-        path: '/',
+        path: '#',
         display: 'Home'
     },
     
