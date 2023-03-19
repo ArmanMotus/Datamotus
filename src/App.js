@@ -1,5 +1,6 @@
 
 import React, {useState,useEffect} from 'react';
+import ScrollToTop from './components/UI/Scrolling/Scroll';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 
 import './App.css';
@@ -42,17 +43,18 @@ function App() {
 
   useEffect(()=>{document.body.className = theme},[theme])
 
-  return (
-    <>    
-    
-                {/* <Route path='/' element={<Home theme={theme} toggleTheme={toggleTheme}/>} /> */}
-                {/* <Route path='about' element={<About />} />
-                <Route path='posts' element={<Posts />} /> */}
-                        {/* <Header theme={theme} toggleTheme={toggleTheme} /> */}
-      <section>
+  return (      
+  
+    <>   
+          
+        <ScrollToTop />
+
         <Header theme={theme} toggleTheme={toggleTheme} />
-      </section>
+        
+      
       <Routes>
+      
+
         <Route path="/datamotus" element={<Home theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/projects" element={<Projects theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme}/>} />
@@ -83,18 +85,15 @@ function App() {
         <Route path="/datamotus/Project_5" element={<Project_5 />} />  
         <Route path="/datamotus/Project_14" element={<Project_14 />} />  
         <Route path="/datamotus/Project_15" element={<Project_15 />} />  
-        <Route path="/datamotus/Project_16" element={<Project_16 />} />  
-           
-          
-
-
-      </Routes>
-      <section>
-        <Footer />
-      </section>          
+        <Route path="/datamotus/Project_16" element={<Project_16 />} /> 
       
+   
+      </Routes>
+
+        <Footer />
+    
+
     </>  
-     
     
     
       
