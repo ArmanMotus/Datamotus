@@ -9,10 +9,10 @@
 }
 
 .course {
-    background:  ;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
+    cursor: pointer;
 }
 .course:hover{
     background: transparent;
