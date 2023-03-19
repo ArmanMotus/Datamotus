@@ -71,6 +71,59 @@ const Testimonial = ({theme}) => {
                     </div>
                 </div>
                 </div>
+
+                <div className='slider__item'>
+                    <p className="description">"Our partnership with Datamotus has been truly transformative for our business. Their expertise in data science and machine learning allowed us to unlock the power of our product usage data, revealing valuable insights into our customers' behavior and needs. Thanks to their analysis,
+                    we were able to make informed business decisions that have significantly improved our customer experience and driven growth for our company."
+                    </p>
+                <div className='customer__details'>
+                    <div>
+                        <h5 className="customer__name">Armen Avakian</h5>
+                        <p className='description'>Co-Founder & CBDO at Hexact inc</p>
+                    </div>
+                </div>
+                </div>
+
+                <div className='slider__item'>
+                    <p className="description">"The Dashboard for Ayb's Subject Contests project delivered by Datamotus exceeded our expectations. 
+                    We were impressed with their technical expertise and attention to detail throughout the development process. 
+                    The R Shiny dashboard they created was intuitive and user-friendly, enabling us to easily track and analyze the performance of students across different categories. 
+                    It has become an invaluable tool for us in monitoring the progress of our Subject Contests. 
+                    We highly recommend Datamotus for their exceptional data science and dashboard development services.</p>
+                <div className='customer__details'>
+                    <div>
+                        <h5 className="customer__name">Sona Koshetsyan</h5>
+                        <p className='description'>Executive Director at Ayb Educational Foundation</p>
+                    </div>
+                </div>
+                </div>
+
+                <div className='slider__item'>
+                    <p className="description">"The data analysis project undertaken by Datamotus has been a game-changer for our legal team. 
+                    By analyzing our lawyers' email exchange data, the team was able to provide valuable insights into our work behavior and identify areas where we could improve our productivity. 
+                    The interactive dashboard they created allowed us to view the data in a graphical format, making it easier to understand and identify trends. 
+                    We highly recommend Datamotus for their exceptional data analytics and dashboard development services.</p>
+                <div className='customer__details'>
+                    <div>
+                        <h5 className="customer__name">Gevorg Karapetyan</h5>
+                        <p className='description'>CTO at ZERO</p>
+                    </div>
+                </div>
+                </div>
+                
+                <div className='slider__item'>
+                    <p className="description">"Datamotus did an excellent job in developing and delivering the six-month data science bootcamp for our students at the Microsoft Innovation Center. 
+                    The curriculum was well-structured and covered a wide range of topics, from programming to machine learning and data visualization. 
+                    The project supervision and guidance provided to the students were invaluable in helping them apply their knowledge to real-world projects. 
+                    Highly recommend Datamotus for their expertise in data science and their ability to deliver comprehensive corporate training programs.</p>
+                <div className='customer__details'>
+                    <div>
+                        <h5 className="customer__name">Artashes Vardanyan</h5>
+                        <p className='description'> Director at Microsoft Innovation center</p>
+                    </div>
+                </div>
+                </div>
+
              </Slider>
             </div>
         </div>
@@ -80,6 +133,5 @@ const Testimonial = ({theme}) => {
 }
 
 export default Testimonial
-
 
 

@@ -1,5 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import Slider from 'react-slick';
+import { useNavigate} from "react-router-dom";
 
 import "../../styles/hero.css"
 import '../../styles/counter.css'
@@ -16,9 +17,6 @@ import team02 from '../../images/team2.jpg'
 import team03 from '../../images/team3.jpg'
 import team04 from '../../images/team4.jpeg'
 import team05 from '../../images/team5.jpg'
-
-import Footer from '../Footer/Footer';
-import Header from '../Header/Header';
 
 const counterData =[
     {
@@ -38,26 +36,30 @@ const counterData =[
 
 const projectData =[
     {
-        icon:'ri-shield-star-fill',
-        title: 'STUDY ON WILLINGNESS TO PAY PRICE PREMIUM',
+        icon:'ri-bank-fill',
+        title: "Using Data Science to Predict Daily Cash Demand for Local Bank's ATM Machines",
+        link: 'Project_1',
         desc: ''
     },
    
     {
-        icon:'ri-shield-star-fill',
-        title: 'ANALYSIS OF HIGHER EDUCATION STUDY RESULTS',
+        icon:'ri-bar-chart-grouped-fill',
+        title: 'Unlocking the Power of Product Usage Data with Marketing and Product Analytics',
+        link: 'Project_2',
         desc: ''
     },
 
     {
-        icon:'ri-shield-star-fill',
-        title: 'PREDICTING PROBABILITY OF REPEATED PURCHASE',
+        icon:'ri-scales-3-line',
+        title: "Improving Lawyer's Work Behavior with Data Analysis",
+        link: 'Project_3',
         desc: ''
     },
 
     {
-        icon:'ri-shield-star-fill',
-        title: 'CUSTOMER CHURN MODELING FEASIBILITY STUDY',
+        icon:'ri-community-line',
+        title: 'UNICEF Libya',
+        link:'Project_4',
         desc: ''
     },
 
@@ -65,26 +67,30 @@ const projectData =[
 
 const projectData2 = [
     {
-        icon:'ri-shield-star-fill',
-        title: 'CUSTOMER SATISFACTION STUDY',
+        icon:'ri-bar-chart-2-fill',
+        title: 'Development of a Comprehensive Conjoint Analysis Tool',
+        link: 'Project_5',
         desc: ''
     },
 
     {
-        icon:'ri-shield-star-fill',
-        title: 'CASH DEMAND FORECASTING',
+        icon:'ri-pin-distance-fill',
+        title: 'GIZ - Big Data for Urban Planning ',
+        link: 'Project_15',
         desc: ''
     },
 
     {
-        icon:'ri-shield-star-fill',
-        title: 'MARKETING MIX EFFECTIVENESS',
+        icon:'ri-settings-5-line',
+        title: 'Developing a Fully Automated Conjoint Analysis Tool for Remote Partners',
+        link: 'Project_14',
         desc: ''
     },
 
     {
-        icon:'ri-shield-star-fill',
-        title: 'PREDICTIVE MODEL FOR AN HR PORTAL',
+        icon:'ri-user-heart-fill',
+        title: 'Customer Satisfaction Study for a Major Telecom Company in South-East Asia',
+        link: 'Project_16',
         desc: ''
     },
 
@@ -95,25 +101,32 @@ const chooseData =[
     {
         icon: 'ri-line-chart-fill',
         title: 'MACHINE LEARNING / STATISTICAL ANALYSIS',
-        desc: 'We build systems that can learn from data and we find relationships between variables to predict outcomes for your business.'
+        desc: 'We build systems that can learn from data and we find relationships between variables to predict outcomes for your business.',
+        link1: '/services'
     },
 
     {
         icon: 'ri-store-3-fill',
         title: 'MARKETING RESEARCH AND ANALYTICS',
-        desc: 'Traditionally, marketing research and data science have been viewed as separate approaches. But we combine these two research disciplines for more in-depth findings.'
+        desc: 'Traditionally, marketing research and data science have been viewed as separate approaches. But we combine these two research disciplines for more in-depth findings.',
+        link1: '/services'
+
     },
 
     {
         icon: 'ri-dashboard-fill',
         title: 'DATA VISUALIZATION AND DASHBOARDING',
-        desc: 'You don’t need to be a data scientist to understand our findings. We put every outcome of our efforts into easy-to-use and nice dashboards.'
+        desc: 'You don’t need to be a data scientist to understand our findings. We put every outcome of our efforts into easy-to-use and nice dashboards.',
+        link1: '/services'
+
     },
 
     {
         icon: 'ri-shirt-fill',
         title: 'CORPORATE TRAINING',
-        desc: 'We conduct training on R programming and statistical analysis as well as conjoint training. Bring your team or anyone you want with you!'
+        desc: 'We conduct training on R programming and statistical analysis as well as conjoint training. Bring your team or anyone you want with you!',
+        link1: '/services'
+
     },
 ]
 
@@ -155,7 +168,21 @@ const teamMembers =[
     
 ]
 
+
+
 const Hero = ({theme}) => {
+
+    const history = useNavigate()
+    const handleSomething = (link) =>{
+    history(link)   
+};
+
+const handleServices = (link1) =>{
+history(link1)   
+};
+
+
+
     const settings = {
         dots: false,
         Infinite: true,
@@ -222,7 +249,7 @@ const Hero = ({theme}) => {
             <div className="project__item-wrapper">
                {
                 projectData.map((item,index)=>(
-                    <div className="projects__item" key={index}>
+                    <div className="projects__item" key={index} onClick={(e) => handleSomething(item.link)}>
                     <span className="projects__icon">
                     <i class={item.icon}></i> 
                     </span>
@@ -235,7 +262,7 @@ const Hero = ({theme}) => {
             <div className="project__item-wrapper2">
                {
                 projectData2.map((item,index)=>(
-                    <div className="projects__item" key={index}>
+                    <div className="projects__item" key={index} onClick={(e) => handleSomething(item.link)}>
                     <span className="projects__icon">
                     <i class={item.icon}></i> 
                     </span>
@@ -255,14 +282,29 @@ const Hero = ({theme}) => {
             <div className='about__wrapper'>
                 <div className='about_content'>
                     <h5 className='subtitle'>About us</h5>
-                    {/* <h2></h2> */}
-                    {/* <h2 className='highlight'></h2> */}
+                   
                     <p className='description about__content-desc'>
-                    The company was founded in 2014 by two data scientists.
+                    Welcome to Datamotus, a leading data science company that specializes in statistical analysis, machine learning, computer vision, and natural language processing services.
+                    </p>
                     <br></br>
-                    Habet Madoyan (co-founder, CEO) is a Data Science program chair and Assistant Professor at the College of Science and Engineering at the American University of Armenia. He holds a Ph.D. in Economics, Emphasis in Management from the National Academy of Sciences of RA: Institute of Economics and a Master’s degree in Business Administration, Emphasis on database marketing from the University of Missouri, Columbia – Crosby MBA Program.
+                    <p className='description about__content-desc'>
+                    Our vision is to help businesses make data-driven decisions and boost sales by leveraging their data. With our range of data analytics services, we can help you optimize your operations, improve your marketing efforts, and achieve your business goals.
+                    </p>
                     <br></br>
-                    Vahe Movsisyan is the co-founder of Datamotus as well as Mychoice (Singapore). He holds a Ph.D. in Economics (Concentration: Mathematical statistics and Econometrics) from the Moscow State University of Economics, Statistics, and Informatics. Vahe, too, has got extensive experience in teaching. Up until now, he is a Visiting Lecturer of Applied Statistics and Data Mining courses at the American University of Armenia.
+                    <p className='description about__content-desc'>
+                    Our team of experts has extensive experience in machine learning, deep learning, and other advanced analytics techniques. We provide end-to-end support for data analytics projects, from defining the business problem to deploying the model, to help businesses gain valuable insights from their data.
+                    </p>
+                    <br></br>
+                    <p className='description about__content-desc'>
+                    In addition to our data analytics services, we offer computer vision and natural language processing solutions that can help businesses analyze and understand visual and text data more effectively. Our team has experience building image recognition models, object detection models, and natural language processing models, as well as analyzing and classifying text data for sentiment analysis, topic modeling, and more.
+                    </p>
+                    <br></br>
+                    <p className='description about__content-desc'>
+                    At Datamotus, we are committed to staying up-to-date with the latest developments in data analytics, machine learning, and other advanced analytics techniques. Our team operates in a rapid learning environment and strives to always be in tune with the most recent developments in the industry.
+                    </p>
+                    <br></br>
+                    <p className='description about__content-desc'>
+                    If you're looking for a data science partner that can help you unlock the full potential of your data, look no further than Datamotus. Contact us today to learn more about our services and how we can help you achieve your business goals.
                     </p>
                     
                     <div className='choose__item-wrapper'>
@@ -277,7 +319,7 @@ const Hero = ({theme}) => {
                                         {item.desc}
                                     </p>
                                     <div className='about_learn_button'>
-                                        <button className='about_btn'>Learn More</button>
+                                        <button className='about_btn' onClick={(e) => handleServices(item.link1)} >Learn More  </button>
                                     </div>
                                 </div>
                             </div>
@@ -389,6 +431,59 @@ const Hero = ({theme}) => {
                     </div>
                 </div>
                 </div>
+
+                <div className='slider__item'>
+                    <p className="description">"Our partnership with Datamotus has been truly transformative for our business. Their expertise in data science and machine learning allowed us to unlock the power of our product usage data, revealing valuable insights into our customers' behavior and needs. Thanks to their analysis,
+                    we were able to make informed business decisions that have significantly improved our customer experience and driven growth for our company."
+                    </p>
+                <div className='customer__details'>
+                    <div>
+                        <h5 className="customer__name">Armen Avakian</h5>
+                        <p className='description'>Co-Founder & CBDO at Hexact inc</p>
+                    </div>
+                </div>
+                </div>
+
+                <div className='slider__item'>
+                    <p className="description">"The Dashboard for Ayb's Subject Contests project delivered by Datamotus exceeded our expectations. 
+                    We were impressed with their technical expertise and attention to detail throughout the development process. 
+                    The R Shiny dashboard they created was intuitive and user-friendly, enabling us to easily track and analyze the performance of students across different categories. 
+                    It has become an invaluable tool for us in monitoring the progress of our Subject Contests. 
+                    We highly recommend Datamotus for their exceptional data science and dashboard development services.</p>
+                <div className='customer__details'>
+                    <div>
+                        <h5 className="customer__name">Sona Koshetsyan</h5>
+                        <p className='description'>Executive Director at Ayb Educational Foundation</p>
+                    </div>
+                </div>
+                </div>
+
+                <div className='slider__item'>
+                    <p className="description">"The data analysis project undertaken by Datamotus has been a game-changer for our legal team. 
+                    By analyzing our lawyers' email exchange data, the team was able to provide valuable insights into our work behavior and identify areas where we could improve our productivity. 
+                    The interactive dashboard they created allowed us to view the data in a graphical format, making it easier to understand and identify trends. 
+                    We highly recommend Datamotus for their exceptional data analytics and dashboard development services.</p>
+                <div className='customer__details'>
+                    <div>
+                        <h5 className="customer__name">Gevorg Karapetyan</h5>
+                        <p className='description'>CTO at ZERO</p>
+                    </div>
+                </div>
+                </div>
+                
+                <div className='slider__item'>
+                    <p className="description">"Datamotus did an excellent job in developing and delivering the six-month data science bootcamp for our students at the Microsoft Innovation Center. 
+                    The curriculum was well-structured and covered a wide range of topics, from programming to machine learning and data visualization. 
+                    The project supervision and guidance provided to the students were invaluable in helping them apply their knowledge to real-world projects. 
+                    Highly recommend Datamotus for their expertise in data science and their ability to deliver comprehensive corporate training programs.</p>
+                <div className='customer__details'>
+                    <div>
+                        <h5 className="customer__name">Artashes Vardanyan</h5>
+                        <p className='description'> Director at Microsoft Innovation center</p>
+                    </div>
+                </div>
+                </div>
+
              </Slider>
             </div>
         </div>
