@@ -1,0 +1,39 @@
+.courses {
+    margin-top: 10rem;
+}
+
+.courses__container {
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 4rem;
+}
+
+.course {
+    background:  ;
+    text-align: center;
+    border: 1px solid transparent;
+    transition: var(--transition);
+}
+.course:hover{
+    background: transparent;
+    border-color: var(--card-bg);
+}
+
+.subtitle_train{
+    margin-bottom: 30px;
+    text-align: center;
+    margin-top: -50px;
+    align-content: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    font-weight: 400;
+  }
+
+.course__info {
+    padding: 2rem;
+}
+
+.course__info p{
+    margin: 1.2rem 0 2rem;
+    font-size: 0.9rem;
+}

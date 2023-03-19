@@ -98,19 +98,7 @@ const Testimonial = ({theme}) => {
                 </div>
                 </div>
 
-                <div className='slider__item'>
-                    <p className="description">"The data analysis project undertaken by Datamotus has been a game-changer for our legal team. 
-                    By analyzing our lawyers' email exchange data, the team was able to provide valuable insights into our work behavior and identify areas where we could improve our productivity. 
-                    The interactive dashboard they created allowed us to view the data in a graphical format, making it easier to understand and identify trends. 
-                    We highly recommend Datamotus for their exceptional data analytics and dashboard development services.</p>
-                <div className='customer__details'>
-                    <div>
-                        <h5 className="customer__name">Gevorg Karapetyan</h5>
-                        <p className='description'>CTO at ZERO</p>
-                    </div>
-                </div>
-                </div>
-                
+            
                 <div className='slider__item'>
                     <p className="description">"Datamotus did an excellent job in developing and delivering the six-month data science bootcamp for our students at the Microsoft Innovation Center. 
                     The curriculum was well-structured and covered a wide range of topics, from programming to machine learning and data visualization. 
