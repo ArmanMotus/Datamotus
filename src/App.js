@@ -30,8 +30,17 @@ import Project_13 from './components/Project_details/Project_13'
 import Project_14 from './components/Project_details/Project_14'
 import Project_15 from './components/Project_details/Project_15'
 import Project_16 from './components/Project_details/Project_16'
+import Byblos from './components/Training_details/Byblos';
+import CRRC from './components/Training_details/CRRC';
+import HMC from './components/Training_details/HMC';
+import Europe from './components/Training_details/Europe';
+import Microsoft from './components/Training_details/Microsoft';
+import RA from './components/Training_details/RA';
+import WVA from './components/Training_details/WVA';
+import Digitain from './components/Training_details/Digitain';
 
-
+import Ameria from './components/Training_details/Ameria';
+import VIVA from './components/Training_details/VIVA'
 
 function App() {
 
@@ -86,8 +95,17 @@ function App() {
         <Route path="/datamotus/Project_14" element={<Project_14 />} />  
         <Route path="/datamotus/Project_15" element={<Project_15 />} />  
         <Route path="/datamotus/Project_16" element={<Project_16 />} /> 
-      
-   
+        <Route path="/trainings/Byblos" element={<Byblos />} /> 
+        <Route path="/trainings/CRRC" element={<CRRC />} /> 
+        <Route path="/trainings/HMC" element={<HMC />} /> 
+        <Route path="/trainings/Europe" element={<Europe />} /> 
+        <Route path="/trainings/Microsoft" element={<Microsoft />} /> 
+        <Route path="/trainings/RA" element={<RA />} /> 
+        <Route path="/trainings/WVA" element={<WVA />} /> 
+        <Route path="/trainings/Digitain" element={<Digitain />} /> 
+        <Route path="/trainings/Ameria" element={<Ameria />} /> 
+        <Route path="/trainings/VIVA" element={<VIVA />} /> 
+
       </Routes>
 
         <Footer />

@@ -2,10 +2,26 @@
     margin-top: 10rem;
 }
 
+.pageDesc {
+    display: flex;
+    text-align:justify;
+    margin-top: 10px;
+    font-size: 1rem;
+    width: 1150px;
+    margin-left: 2600px;
+    margin-bottom: 10px;
+}
+
+.page{
+    display: flex;
+    margin-top: 80px;
+}
+
 .courses__container {
-    display: grid;
+    display:grid;
     grid-template-columns: repeat(2, 3fr);
     gap: 4rem;
+    margin-top: 60px;
 }
 
 .course {
