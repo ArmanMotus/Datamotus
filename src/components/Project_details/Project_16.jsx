@@ -1,11 +1,14 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
+import BackButton from '../../components/UI/Scrolling/Back'
 
 
 const Project_16 = () => {
   return (
     <section >
     <div className='container'>
+    <BackButton />     
+
         <div className='about__wrapper'>
             <div className='about_content'>
                 <h5 className='subtitle'> Customer Satisfaction Study for a Major Telecom Company in South-East Asia </h5>

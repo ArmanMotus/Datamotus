@@ -1,6 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import Slider from 'react-slick';
-import { useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 import "../../styles/hero.css"
 import '../../styles/counter.css'
@@ -38,27 +38,28 @@ const projectData =[
     {
         icon:'ri-bank-fill',
         title: "Using Data Science to Predict Daily Cash Demand for Local Bank's ATM Machines",
-        link: 'Project_1',
+        link: 'Project_2',
         desc: ''
     },
    
     {
         icon:'ri-bar-chart-grouped-fill',
         title: 'Unlocking the Power of Product Usage Data with Marketing and Product Analytics',
-        link: 'Project_2',
-        desc: ''
-    },
-
-    {
-        icon:'ri-scales-3-line',
-        title: "Improving Lawyer's Work Behavior with Data Analysis",
         link: 'Project_3',
         desc: ''
     },
 
     {
+            icon:'ri-virus-fill',
+            title: 'Rapid Nationwide Community Assessment on the Socio-Economic Impact of COVID-19 outbreak',
+            link: 'Project_6',
+            desc: ''
+    },
+    
+
+    {
         icon:'ri-community-line',
-        title: 'UNICEF Libya',
+        title: 'Developing a Real-Time Visualization Tool for Survey Monitoring using R shiny',
         link:'Project_4',
         desc: ''
     },
@@ -209,8 +210,12 @@ history(link1)
                     </div>
                     <p className='description'> </p>
                     <div className='hero__btns'>
+                        <Link to="/contact">
                         <button className='primary__btn'>Contact us</button>
-                        <button className='secondary__btn'>Discover more</button>
+                        </Link>
+                        <Link to="/about">
+                        <button className='secondary__btn'>Discover more </button>
+                        </Link>
                     </div>
                 </div>
                 <div className='hero__img'>
@@ -314,8 +319,8 @@ history(link1)
                                     <i class={item.icon}></i>
                                 </span>
                                 <div>
-                                    <h4 className="choose__us-title">{item.title}</h4>
-                                    <p className="description_about">
+                                    <h4 className="choose_us-title">{item.title}</h4>
+                                    <p className="description__about">
                                         {item.desc}
                                     </p>
                                     <div className='about_learn_button'>

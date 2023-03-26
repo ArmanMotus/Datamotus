@@ -1,11 +1,14 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
+import BackButton from '../../components/UI/Scrolling/Back'
 
 
 const Project_7 = () => {
   return (
     <section >
     <div className='container'>
+    <BackButton />     
+
         <div className='about__wrapper'>
             <div className='about_content'>
                 <h5 className='subtitle'> Development and Validation of a Proxy Tool to Pre-Screen Offenders for Risk to Reoffend</h5>

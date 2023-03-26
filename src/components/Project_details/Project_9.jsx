@@ -1,11 +1,14 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
+import BackButton from '../../components/UI/Scrolling/Back'
 
 
 const Project_9 = () => {
   return (
     <section >
     <div className='container'>
+    <BackButton />     
+
         <div className='about__wrapper'>
             <div className='about_content'>
                 <h5 className='subtitle'> Deployment and Implementation of LMS System for GIZ</h5>

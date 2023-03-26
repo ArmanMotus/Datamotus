@@ -1,5 +1,6 @@
 import React from 'react'
 import '../../styles/projects.css'
+import BackButton from './Scrolling/Back'
 
 import { useNavigate} from "react-router-dom";
 
@@ -7,40 +8,36 @@ const projectData =[
     {
         icon:'ri-bank-fill',
         title: "Using Data Science to Predict Daily Cash Demand for Local Bank's ATM Machines",
-        link: 'Project_1',
+        link: 'Project_2',
         desc: ''
     },
    
     {
         icon:'ri-bar-chart-grouped-fill',
         title: 'Unlocking the Power of Product Usage Data with Marketing and Product Analytics',
-        link: 'Project_2',
-        desc: ''
-    },
-
-    {
-        icon:'ri-scales-3-line',
-        title: "Improving Lawyer's Work Behavior with Data Analysis",
         link: 'Project_3',
         desc: ''
     },
 
+
     {
         icon:'ri-community-line',
-        title: 'UNICEF Libya',
+        title: 'Developing a Real-Time Visualization Tool for Survey Monitoring using R shiny',
         link:'Project_4',
         desc: ''
     },
 
-]
-
-const projectData2 = [
     {
         icon:'ri-bar-chart-2-fill',
         title: 'Development of a Comprehensive Conjoint Analysis Tool',
         link: 'Project_5',
         desc: ''
     },
+
+]
+
+const projectData2 = [
+    
 
     {
         icon:'ri-virus-fill',
@@ -58,20 +55,22 @@ const projectData2 = [
 
     {
         icon:'ri-book-mark-fill',
-        title: 'Dashboard for Olympiad Results',
+        title: 'Dashboard for Subject Contests',
         link: 'Project_8',
         desc: ''
     },
 
-]
-
-const projectData3 = [
     {
         icon:'ri-database-2-line',
         title: 'Light Deployment and Implementation of LMS System for GIZ',
         link: 'Project_9',
         desc: ''
     },
+
+]
+
+const projectData3 = [
+    
 
     {
         icon:'ri-windows-fill',
@@ -89,14 +88,11 @@ const projectData3 = [
 
     {
         icon:'ri-sim-card-2-line',
-        title: 'Local Telecom Company',
+        title: 'Development of a Churn Prediction Model Using Machine Learning',
         link: 'Project_12',
         desc: ''
     },
 
-]
-
-const projectData4 = [
     {
         icon:'ri-team-line',
         title: 'Predicting Repeated Purchases Using Demographic Data',
@@ -104,9 +100,14 @@ const projectData4 = [
         desc: ''
     },
 
+]
+
+const projectData4 = [
+    
+
     {
         icon:'ri-settings-5-line',
-        title: 'Developing a Fully Automated Conjoint Analysis Tool for Remote Partners',
+        title: 'Developing a Fully Automated Conjoint Analysis Tool',
         link: 'Project_14',
         desc: ''
     },
@@ -136,7 +137,6 @@ const Projects = () => {
 }
   return (
     <section >
-        
         <div className='container'>
             <div className='project__top-content'>
                 <h6 className='subtitle'>Our Projects</h6>

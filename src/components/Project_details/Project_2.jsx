@@ -1,86 +1,92 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
+import BackButton from '../UI/Scrolling/Back'
 
 
-const Hexact = () => {
+const Project_1 = () => {
   return (
     <section >
     <div className='container'>
+    <div><BackButton /></div>     
         <div className='about__wrapper'>
             <div className='about_content'>
-                <h5 className='subtitle'>Unlocking the Power of Product Usage Data with Marketing and Product Analytics</h5>
+                <h5 className='subtitle'>Using Data Science to Predict Daily Cash Demand for Local Bank's ATM Machines</h5>
                 <br></br>
                 
                 <h2 className='subheader'>Background: 
                 <p className='description about__content-desc'> 
-                Hexact LLC was looking to understand the trends in their product usage and identify opportunities to improve the customer experience. 
+                Our local bank was facing a challenge of ensuring their ATM machines were always stocked with 
+                enough cash to meet daily customer demand. Predicting this demand is complex, as it is influenced by factors such as holidays, 
+                special events, and local economic changes. 
                 </p>
                 </h2>
                 <br></br> <br></br>
                 
                 <h2 className='subheader'>Objective:
                 <p className='description about__content-desc'>
-                Our team was tasked with analyzing the product usage data of Hexact to reveal trends and insights that could inform business decisions.                </p>  
+                We were tasked with creating a tool to accurately predict daily cash demand for the bank's ATM machines.
+                </p>  
                 </h2>
                 <br></br> <br></br>
 
                 <h2 className='subheader'>Data Collection and Preparation:
                 <p className='description about__content-desc'>
-                We collected product usage data from Hexact, which was then cleaned and preprocessed for analysis.
+                We collected historical data on cash withdrawals from the bank's ATMs, 
+                including the date, time, and amount of each withdrawal. 
+                This data was collected over several years to capture a diverse range of events that could impact daily demand. 
+                The data was then cleaned and preprocessed for analysis.
                 </p>
                 </h2>  
                 <br></br> <br></br>
 
-                <h2 className='subheader'>Behavior Analysis: 
+                <h2 className='subheader'>Feature Engineering: 
                 <p className='description about__content-desc'>
-                We analyzed the behavior of Hexact users, studying the differences between active and passive users. 
-                This helped us understand which products and automations were most in demand and in which countries.
+                 To help our model understand the factors that impact daily cash demand, 
+                we created new features from the preprocessed data, including information such as the day of the week, 
+                time of day, and average withdrawal amount for each machine. We also incorporated macroeconomic variables such as monetary base, 
+                exchange rate, etc, as predictors to our model.
                 </p>
                 </h2>
                 <br></br> <br></br>
                 
-                <h2 className='subheader'>Product Demand: 
+                <h2 className='subheader'>Model Building: 
                 <p className='description about__content-desc'>
-                We explored the products that are required by both ordinary users and different industries, 
-                giving Hexact valuable insights into their target markets.
+                 We used Time-Series Forecasting, a statistical method that uses historical data to predict future values in a series, 
+                to build our predictive model. The model was trained on the preprocessed data and newly created features using the R programming language.
                 </p>
                 </h2>
                 <br></br> <br></br>
                 
-                <h2 className='subheader'>Automation Credit Usage: 
+                <h2 className='subheader'>Model Evaluation: 
                 <p className='description about__content-desc'>
-                We investigated how customers use automations credits, providing Hexact with a deeper understanding of their customers' needs and behaviors.
+                We evaluated the model's performance using a holdout validation approach, setting aside a portion of the data for testing. 
+                We measured the accuracy of our predictions using metrics such as Mean Absolute Error (MAE) and Root Mean Squared Error (RMSE).
                 </p>
                 </h2>
                 <br></br> <br></br>
                 
-                <h2 className='subheader'>Referral Sources: 
+                <h2 className='subheader'>Outcome: 
                 <p className='description about__content-desc'>
-                We identified the websites that users referred from, giving Hexact valuable information on their marketing strategies and potential areas for improvement.                
+                The model we built was highly accurate, with a low MAE and RMSE, accurately predicting daily cash demand for the bank's ATM machines.
                 </p>
                 </h2>
                 <br></br> <br></br>
 
-                <h2 className='subheader'>Churn Rate Analysis:
+                <h2 className='subheader'>Product:
                 <p className='description about__content-desc'>  
-                We analyzed the behavior of dissatisfied users to understand the reasons for the churn rate. 
-                This information is valuable in reducing the churn rate and improving customer satisfaction.
+                The final product of our data science project is a standalone application written in R. The application utilizes our predictive model to 
+                forecast the daily cash demand for the bank's ATM machines, providing a data-driven solution to ensure their machines are always fully stocked 
+                with cash. The team also made a forecast of the demand for different banknote types to assist the bank in ensuring that the ATMs were stocked with 
+                the right mix of banknotes.
                 </p>
                 </h2>
                 <br></br> <br></br>
 
-                <h2 className='subheader'>Outcome:
-                <p className='description about__content-desc'>  
-                The project was a success, providing Hexact with valuable insights into their customers' behavior and product usage. 
-                This information was used to inform business decisions, improve the customer experience, and drive growth for the company.
-                </p>
-                </h2>
-                <br></br> <br></br>
-
-                <h2 className='subheader'>Conclusion:     
+                <h2 className='subheader'>Conclusion    
                 <p className='description about__content-desc'>
-                This case study demonstrates the importance of data-driven decision-making in the business world. 
-                Our analysis of Hexact's product usage data provided valuable insights that were used to drive positive results for the company.              
+                This data science case study demonstrates the power of using historical data and advanced predictive modeling techniques to solve real-world problems. 
+                Our standalone application provides the local bank with a solution to accurately predict daily cash demand for their ATM machines, 
+                improving the customer experience and driving positive results for their business.               
                 </p>
                 </h2>
                 
@@ -95,4 +101,4 @@ const Hexact = () => {
     
   )
 }
-export default Hexact;
+export default Project_1;

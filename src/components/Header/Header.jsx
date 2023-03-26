@@ -103,11 +103,11 @@ const toggleMenu = () => menuRef.current.classList.toggle('menu__active');
                     </ul>
                 </div>
             
-                 {/* light mode */}  
-                <div className="light__mode">
+                 {/* light mode   */}
+                {/* <div className="light__mode">
                     <span onClick={toggleTheme}>
                     {
-                       theme ==='light-theme' ? (
+                       theme !=='light-theme' ? (
                        <span>
                         <i class='ri-moon-line'></i>Dark
                         </span>
@@ -119,7 +119,7 @@ const toggleMenu = () => menuRef.current.classList.toggle('menu__active');
                     )}
                </span>
                 
-                </div>
+                </div> */}
 
                 <span className="mobile_menu" onClick={toggleMenu}> <i class="ri-menu-line"></i> 
                 </span>

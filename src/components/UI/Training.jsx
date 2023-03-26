@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/trainings.css'
 import { useNavigate} from "react-router-dom";
 import '../../styles/projectDet.css';  
-
+import BackButton from './Scrolling/Back';
 
 import course1 from '../../images/Byblos.png'
 import course2 from '../../images/CRRC.jpeg'
@@ -15,7 +15,6 @@ import course8 from '../../images/digitain.png'
 import course9 from '../../images/Ameria.png'
 import course10 from '../../images/VIVA.png'
 
-
 const Trainings = () => {
 
   const history = useNavigate()
@@ -25,6 +24,7 @@ const Trainings = () => {
 
   return (
       <section className="courses">
+        
         <div className='container'>
            <div className='about__wrapper'>
               <div className='about_content'>

@@ -1,43 +1,35 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
+import BackButton from '../UI/Scrolling/Back'
 
 
-const Project_3 = () => {
+const Hexact = () => {
   return (
     <section >
     <div className='container'>
+    <BackButton />     
+
         <div className='about__wrapper'>
             <div className='about_content'>
-                <h5 className='subtitle'>Improving Lawyer's Work Behavior with Data Analysis</h5>
+                <h5 className='subtitle'>Unlocking the Power of Product Usage Data with Marketing and Product Analytics</h5>
                 <br></br>
                 
                 <h2 className='subheader'>Background: 
                 <p className='description about__content-desc'> 
-                The legal industry is a fast-paced and ever-changing environment that requires lawyers to handle vast amounts of 
-                information on a daily basis. With the increasing demand for efficiency and productivity, 
-                it has become essential for lawyers to find ways to manage their workload more effectively. 
-                In this case study, we will look at how data analysis was used to understand the working behavior of lawyers and assist them in finding relevant information quickly, 
-                ultimately increasing their productivity. 
+                Hexact LLC was looking to understand the trends in their product usage and identify opportunities to improve the customer experience. 
                 </p>
                 </h2>
                 <br></br> <br></br>
                 
                 <h2 className='subheader'>Objective:
                 <p className='description about__content-desc'>
-                The project aimed to analyze lawyers' email exchange data to understand their work behavior. 
-                The team of data analysts extracted useful information from the emails, 
-                including recurrent document numbers, names, domains, and more. 
-                The data was then analyzed using various techniques, including descriptive analysis, 
-                cluster analysis, network analysis, and gap analysis.
-                </p>  
+                Our team was tasked with analyzing the product usage data of Hexact to reveal trends and insights that could inform business decisions.                </p>  
                 </h2>
                 <br></br> <br></br>
 
-                <h2 className='subheader'>Data Visualization:
+                <h2 className='subheader'>Data Collection and Preparation:
                 <p className='description about__content-desc'>
-                One of the key objectives of the project was to visualize the data in a meaningful way. 
-                To achieve this, the team used a combination of descriptive analysis and data visualization techniques to create an interactive dashboard. 
-                The dashboard allowed the lawyers to view their email exchange data in a graphical format, making it easier to understand and identify trends.
+                We collected product usage data from Hexact, which was then cleaned and preprocessed for analysis.
                 </p>
                 </h2>  
                 <br></br> <br></br>
@@ -50,45 +42,48 @@ const Project_3 = () => {
                 </h2>
                 <br></br> <br></br>
                 
-                <h2 className='subheader'>Topic Modeling: 
+                <h2 className='subheader'>Product Demand: 
                 <p className='description about__content-desc'>
-                The cluster analysis of email titles was performed using topic modeling techniques such as Latent Dirichlet Allocation 
-                and Non Negative Matrix Factorization. These techniques were used to identify the topics and themes discussed in the email titles, 
-                making it easier for lawyers to categorize and locate relevant information.
+                We explored the products that are required by both ordinary users and different industries, 
+                giving Hexact valuable insights into their target markets.
                 </p>
                 </h2>
                 <br></br> <br></br>
                 
-                <h2 className='subheader'>Network Analysis:
+                <h2 className='subheader'>Automation Credit Usage: 
                 <p className='description about__content-desc'>
-                Network analysis was performed using N-grams for text mining. This helped the team to understand the relationships 
-                between different email exchanges, making it easier to identify patterns and trends in the data.
+                We investigated how customers use automations credits, providing Hexact with a deeper understanding of their customers' needs and behaviors.
                 </p>
                 </h2>
                 <br></br> <br></br>
                 
-                <h2 className='subheader'>Project Clustering: 
+                <h2 className='subheader'>Referral Sources: 
                 <p className='description about__content-desc'>
-                The team executed projects clustering using tools such as DTM and Name Entity Recognition. 
-                This helped to categorize the emails based on their content, making it easier for lawyers to find relevant information quickly.
+                We identified the websites that users referred from, giving Hexact valuable information on their marketing strategies and potential areas for improvement.                
                 </p>
                 </h2>
                 <br></br> <br></br>
 
-                <h2 className='subheader'>Gap Analysis:
+                <h2 className='subheader'>Churn Rate Analysis:
                 <p className='description about__content-desc'>  
-                A gap analysis was performed based on email exchange frequency. 
-                This helped the team to identify areas where lawyers could improve their workflow and be more efficient in their day-to-day operations.
+                We analyzed the behavior of dissatisfied users to understand the reasons for the churn rate. 
+                This information is valuable in reducing the churn rate and improving customer satisfaction.
+                </p>
+                </h2>
+                <br></br> <br></br>
+
+                <h2 className='subheader'>Outcome:
+                <p className='description about__content-desc'>  
+                The project was a success, providing Hexact with valuable insights into their customers' behavior and product usage. 
+                This information was used to inform business decisions, improve the customer experience, and drive growth for the company.
                 </p>
                 </h2>
                 <br></br> <br></br>
 
                 <h2 className='subheader'>Conclusion:     
                 <p className='description about__content-desc'>
-                This case study highlights how data analysis can be used to improve the work behavior of lawyers. By analyzing their email exchange data, 
-                the team was able to identify trends, relationships, and patterns that helped to increase the lawyers' productivity and efficiency. 
-                The interactive dashboard created for the lawyers provides a visual representation of the data, making it easier for them to understand and identify areas for improvement. 
-                The project was a success, and the results demonstrate how data analysis can be used to drive positive outcomes in the legal industry.              
+                This case study demonstrates the importance of data-driven decision-making in the business world. 
+                Our analysis of Hexact's product usage data provided valuable insights that were used to drive positive results for the company.              
                 </p>
                 </h2>
                 
@@ -103,4 +98,4 @@ const Project_3 = () => {
     
   )
 }
-export default Project_3;
+export default Hexact;

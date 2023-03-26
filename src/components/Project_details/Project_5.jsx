@@ -1,35 +1,25 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
+import BackButton from '../../components/UI/Scrolling/Back'
 
 
 const Project_5 = () => {
   return (
     <section >
     <div className='container'>
+    <BackButton />     
+
         <div className='about__wrapper'>
             <div className='about_content'>
                 <h5 className='subtitle'>Development of a Comprehensive Conjoint Analysis Tool</h5>
                 <br></br>
                 
-                <h2 className='subheader'>Client: 
-                <p className='description about__content-desc'> 
-                BehaviouralStrategy LLC, Denmark
-                </p>
-                </h2>
-                <br></br> <br></br>
-                
-                <h2 className='subheader'>Dates:
-                <p className='description about__content-desc'>
-                May 2021 – December 2022
-                </p>  
-                </h2>
-                <br></br> <br></br>
 
-                <h2 className='subheader'>Project Summary:
+                <h2 className='subheader'>
                 <p className='description about__content-desc'>
                 BehaviouralStrategy LLC, based in Denmark, approached our team with a goal of automating the choice-based conjoint study design and analysis process. 
                 This was aimed at making the process more efficient and data-driven, leveraging the power of modern technologies. 
-                Our team took on the challenge and successfully delivered a comprehensive conjoint analysis tool, designed and developed in R programming language.
+                Our team delivered a comprehensive conjoint analysis tool, designed and developed in R programming language.
                 </p>
                 </h2>  
                 <br></br> <br></br>

@@ -1,11 +1,14 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
+import BackButton from '../../components/UI/Scrolling/Back'
 
 
 const Project_10 = () => {
   return (
     <section >
     <div className='container'>
+    <BackButton />     
+
         <div className='about__wrapper'>
             <div className='about_content'>
                 <h5 className='subtitle'> Microsoft Innovation Center Data Science Bootcamp </h5>

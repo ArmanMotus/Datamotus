@@ -3,12 +3,15 @@ import React from 'react'
 import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 import '../../styles/Contact.css';
+import BackButton from './Scrolling/Back';
 
 const contact = () => {
   return (
       <section>
       
-      <div className="contact-container">
+      <div className="container">
+      <div><BackButton /></div>     
+      <div className="contact-container">  
       <div className="map-container">
         <iframe
           src="https://yandex.com/maps/10262/yerevan/house/YE0YcwRhQEIAQFpqfX5xcXVqYw==/?ll=44.532155%2C40.201027&z=17.84"
@@ -28,6 +31,7 @@ const contact = () => {
         <textarea placeholder="Message" />
         <button type="submit">Send</button>
       </form>
+    </div>
     </div>
       </section>
     

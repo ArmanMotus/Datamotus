@@ -48,15 +48,15 @@
     font-size: 3rem;
 }
 
-.choose__us-title {
-    color: #fff;
+.choose_us-title {
+    color: #000000;
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.description_about{
+.description__about{
     margin-top: 10px;
-    color: #fff
+    color: #050101
 }
 
 .about_learn_button{
@@ -77,5 +77,5 @@
 
 .about_btn{
     background: var(--btn-primary-bg);
-    border: 1px solid var(--btn-primary-bg);
+    border: 10px solid var(--btn-primary-bg);
 }

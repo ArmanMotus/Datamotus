@@ -1,11 +1,26 @@
 import React from 'react'
-import Header from '../Header/Header';
-import Footer from '../Footer/Footer';
+import '../../styles/Contact.css';
+
 
 const blog = () => {
   return (
-      <section>
-        <div>blog</div>
+    <section>
+      
+    <div className="container">
+    <div className="contact-container">  
+    <div className="map-container">
+      <iframe
+        src=""
+        width="100%"
+        height="450"
+        frameBorder="0"
+        allowFullScreen=""
+        aria-hidden="false"
+        tabIndex="1"
+      ></iframe>
+    </div>
+    </div>
+    </div>
       </section>
     
   )

@@ -2,6 +2,7 @@
 import React, {useState,useEffect} from 'react';
 import ScrollToTop from './components/UI/Scrolling/Scroll';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
+import BackButton from '../src/components/UI/Scrolling/Back';
 
 import './App.css';
 
@@ -14,7 +15,6 @@ import Services from './components/UI/Services';
 import Trainings from './components/UI/Training';
 import Blog from './components/UI/blog';
 import Contact from './components/UI/Contact'
-import Project_1 from './components/Project_details/Project_1'
 import Project_2 from './components/Project_details/Project_2'
 import Project_3 from './components/Project_details/Project_3'
 import Project_4 from './components/Project_details/Project_4'
@@ -55,7 +55,7 @@ function App() {
   return (      
   
     <>   
-          
+       
         <ScrollToTop />
 
         <Header theme={theme} toggleTheme={toggleTheme} />
@@ -71,7 +71,6 @@ function App() {
         <Route path="/trainings" element={<Trainings theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/contact" element={<Contact theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/blog" element={<Blog />} />
-        <Route path="/projects/Project_1" element={<Project_1 />} />
         <Route path="/projects/Project_2" element={<Project_2 />} />
         <Route path="/projects/Project_3" element={<Project_3 />} />
         <Route path="/projects/Project_4" element={<Project_4 />} />
@@ -87,9 +86,9 @@ function App() {
         <Route path="/projects/Project_14" element={<Project_14 />} />
         <Route path="/projects/Project_15" element={<Project_15 />} />
         <Route path="/projects/Project_16" element={<Project_16 />} />
-        <Route path="/datamotus/Project_1" element={<Project_1 />} />  
         <Route path="/datamotus/Project_2" element={<Project_2 />} />  
-        <Route path="/datamotus/Project_3" element={<Project_3 />} />  
+        <Route path="/datamotus/Project_3" element={<Project_3 />} /> 
+        <Route path="/datamotus/Project_6" element={<Project_6 />} />   
         <Route path="/datamotus/Project_4" element={<Project_4 />} />  
         <Route path="/datamotus/Project_5" element={<Project_5 />} />  
         <Route path="/datamotus/Project_14" element={<Project_14 />} />  

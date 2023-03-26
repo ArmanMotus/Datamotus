@@ -21,8 +21,9 @@ const counterData =[
 
 const Counter = () => {
   return (
-    <section className='counter'>
-        <div className="container">
+    
+    <section className='container'>
+        <div className="counter">
             <div className="counter__wrapper">
                 
                 {

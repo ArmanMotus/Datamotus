@@ -1,14 +1,18 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
+import BackButton from '../../components/UI/Scrolling/Back'
 
 
 const Project_15 = () => {
   return (
     <section >
     <div className='container'>
+    <BackButton />     
+
         <div className='about__wrapper'>
             <div className='about_content'>
-                <h5 className='subtitle'> GIZ (Deutsche Gesellschaft für Internationale Zusammenarbeit) - Big Data for Urban Planning </h5>
+                <h5 className='subtitle'> Big Data for Urban Planning </h5>
+                <h5 className='subtitle'>GIZ (Deutsche Gesellschaft für Internationale Zusammenarbeit)</h5>
                 <br></br>
                 
                 <h2 className='subheader'>Client Overview: 

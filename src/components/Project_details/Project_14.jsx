@@ -1,14 +1,17 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
+import BackButton from '../../components/UI/Scrolling/Back'
 
 
 const Project_14 = () => {
   return (
     <section >
     <div className='container'>
+    <BackButton />     
+
         <div className='about__wrapper'>
             <div className='about_content'>
-                <h5 className='subtitle'> Developing a Fully Automated Conjoint Analysis Tool for Remote Partners</h5>
+                <h5 className='subtitle'> Developing a Fully Automated Conjoint Analysis Tool</h5>
                 <br></br>
                 
                 <h2 className='subheader'>Objective: 

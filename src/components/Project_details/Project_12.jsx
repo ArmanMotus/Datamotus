@@ -1,14 +1,17 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
+import BackButton from '../../components/UI/Scrolling/Back'
 
 
 const Project_12 = () => {
   return (
     <section >
     <div className='container'>
+    <BackButton />     
+
         <div className='about__wrapper'>
             <div className='about_content'>
-                <h5 className='subtitle'>  Local Telecom Company </h5>
+                <h5 className='subtitle'>  Development of a Churn Prediction Model Using Machine Learning </h5>
                 <br></br>
                 
                 <h2 className='subheader'>Assignment: 

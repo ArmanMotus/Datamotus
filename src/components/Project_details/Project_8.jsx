@@ -1,21 +1,24 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
+import BackButton from '../../components/UI/Scrolling/Back'
 
 
 const Project_8 = () => {
   return (
     <section >
     <div className='container'>
+    <BackButton />     
+
         <div className='about__wrapper'>
             <div className='about_content'>
-                <h5 className='subtitle'>Dashboard for Olympiad Results</h5>
+                <h5 className='subtitle'>Dashboard for Subject Contests</h5>
                 <br></br>
                 
                 <h2 className='subheader'>Introduction: 
                 <p className='description about__content-desc'> 
                 Ayb Foundation, a renowned educational organization in Armenia, was in need of a dashboard solution to visualize the results of three school 
-                Olympiads. The company approached a software development company to develop an interactive, web-based dashboard to help them keep track of 
-                the results of the Kangaroo (Mathematics), Arjuk (Russian language), and Meghu (Armenian Language) Olympiads.
+                Subject Contests. The company approached a software development company to develop an interactive, web-based dashboard to help them keep track of 
+                the results of the Kangaroo (Mathematics), Arjuk (Russian language), and Meghu (Armenian Language) Subject Contests.
                 </p>
                 </h2>
                 <br></br> <br></br>
@@ -39,7 +42,7 @@ const Project_8 = () => {
 
                 <h2 className='subheader'>Outcome:    
                 <p className='description about__content-desc'>
-                The project was a success, and the Ayb Foundation was able to efficiently monitor and analyze the results of their Olympiads with the help of the R shiny dashboard. 
+                The project was a success, and the Ayb Foundation was able to efficiently monitor and analyze the results of the contests with the help of the R shiny dashboard. 
                 The dashboard was easy to use and provided real-time insights into the performance of students.
 
                 </p>
@@ -48,9 +51,9 @@ const Project_8 = () => {
 
                 <h2 className='subheader'>Conclusion:    
                 <p className='description about__content-desc'>
-                The development of the Dashboard for Olympiad Results project demonstrated the potential of using modern technologies to analyze and visualize data efficiently. 
+                The development of the Dashboard for contests results project demonstrated the potential of using modern technologies to analyze and visualize data efficiently. 
                 The project was a success and delivered the desired outcome for the Ayb Foundation. 
-                The dashboard was user-friendly and provided valuable insights into the performance of students in the Olympiads.
+                The dashboard was user-friendly and provided valuable insights into the performance of students in the contests.
                 </p>
                 </h2>    
 
