@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
-
+import aboutImg from '../../images/telcom_churn.png'
 
 const Project_12 = () => {
   return (
@@ -63,7 +63,7 @@ const Project_12 = () => {
                 
             </div>
             <div className='about__img'>
-                {/* <img src={aboutImg} alt="" /> */}
+                <img src={aboutImg} alt="" /> 
             </div>
         </div>
     </div>

@@ -7,8 +7,9 @@ const BackButton = () => {
 
  
   return (
-    <div className = 'back-arrow' onClick={() => history(-1)}>
-      
+    <div className = 'back-button' onClick={() => history(-1)}>
+      <span class="back-icon"></span>
+      <span class="back-text">Back</span>
     </div>
   );
 };

@@ -23,10 +23,11 @@
     font-size: 2rem;    
 }
 .about__img img{
-    width: 100%;
+    width: 93%;
     height: 100%;
     object-fit:fill;
-    border-radius: 0.5rem;
+    border-radius: 1.5rem;
+    
 }
 
 .subheader {

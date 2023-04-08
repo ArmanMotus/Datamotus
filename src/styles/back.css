@@ -1,53 +1,38 @@
-.back-arrow {
+.back-button {
   display: inline-block;
   position: relative;
-  width: 30px;
-  height: 30px;
-  cursor: pointer;
-  background: linear-gradient(135deg,#0c123d, rgb(84,196,148));
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
-  transform: rotate(-90deg);
+  padding: 10px 16px;
+  border-radius: 50px;
+  background-color:  #0c123d;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+  text-decoration: none;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+  margin-top: 50px;
   margin-bottom: -30px;
-  margin-top: 60px;
-
 }
 
-.back-arrow::before,
-.back-arrow::after {
-  content: '';
+.back-button:hover {
+  background-color: rgb(84,196,148);
+  color: #fff;
+}
+
+.back-icon {
   position: absolute;
-  width: 2px;
-  height: 15px;
-  background-color: white;
-  transition: transform 0.2s ease-out;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60%;
+  height: 60%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.3s ease-in-out;
 }
 
-.back-arrow::before {
-  transform: rotate(45deg);
-  top: 5px;
-  left: 9px;
-}
-
-.back-arrow::after {
-  transform: rotate(-45deg);
-  top: 5px;
-  right: 9px;
-}
-
-.back-arrow:hover::before {
-  transform: translateX(-2px) rotate(45deg);
-}
-
-.back-arrow:hover::after {
-  transform: translateX(2px) rotate(-45deg);
-}
-
-.back-arrow:hover {
-  background: linear-gradient(135deg, #3a3a39, #0e0d0c);
-  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
-}
-
-.back-arrow::before,
-.back-arrow::after {
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+.back-button:hover .back-icon {
+  transform: translate(-50%, -50%) scale(1.2);
 }

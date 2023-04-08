@@ -1,6 +1,8 @@
 import React, {useState,useEffect} from 'react';
 import Slider from 'react-slick';
 import {Link, useNavigate} from "react-router-dom";
+import '../../styles/hero.css'
+
 
 import "../../styles/hero.css"
 import '../../styles/counter.css'
