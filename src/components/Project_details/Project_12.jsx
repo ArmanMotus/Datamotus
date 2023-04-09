@@ -10,8 +10,10 @@ const Project_12 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about__content'>
-                <h5 className='subtitle_services'>  Development of a Churn Prediction Model Using Machine Learning </h5>
+            <div >
+                <h5 className='subtitle_services'>  Development of a Churn Prediction Model Using</h5>
+                <h5 className='subtitle_services'>  Machine Learning </h5>
+
                 <br></br>
                 
                 <h2 className='subheader'>Assignment: 

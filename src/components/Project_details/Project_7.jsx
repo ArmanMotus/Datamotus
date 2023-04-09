@@ -10,7 +10,7 @@ const Project_7 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about__content'>
+            <div>
                 <h5 className='subtitle_services'> Development and Validation of a Proxy Tool to Pre-Screen Offenders for Risk to Reoffend</h5>
                 <br></br>
                 

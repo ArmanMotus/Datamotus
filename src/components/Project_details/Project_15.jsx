@@ -10,7 +10,7 @@ const Project_15 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about__content'>
+            <div className=''>
                 <h5 className='subtitle_services'> Big Data for Urban Planning GIZ (Deutsche Gesellschaft für Internationale Zusammenarbeit)</h5>
                 <br></br>
                 

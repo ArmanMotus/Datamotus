@@ -10,7 +10,7 @@ const Project_16 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about__content'>
+            <div className=''>
                 <h5 className='subtitle_services'>Customer Satisfaction Study for a Major Telecom Company in South-East Asia </h5>
                 <br></br>
                 
