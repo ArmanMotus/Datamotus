@@ -11,8 +11,7 @@ const Project_4 = () => {
 
         <div className='about__wrapper'>
             <div className='about__content'>
-                <h5 className='subtitle'>Developing a Real-Time Visualization Tool for Survey Monitoring </h5>
-                <h5 className='subtitle'>using R shiny</h5>
+                <h5 className='subtitle_services'>Developing a Real-Time Visualization Tool for Survey Monitoring using R shiny</h5>
 
                 <br></br>
                 

@@ -11,7 +11,7 @@ const Project_9 = () => {
 
         <div className='about__wrapper'>
             <div className='about__content'>
-                <h5 className='subtitle'> Deployment and Implementation of LMS System for GIZ</h5>
+                <h5 className='subtitle_services'> Deployment and Implementation of LMS System for GIZ</h5>
                 <br></br>
                 
                 <h2 className='subheader'>Client: 

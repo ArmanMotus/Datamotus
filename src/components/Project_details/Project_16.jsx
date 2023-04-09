@@ -11,8 +11,7 @@ const Project_16 = () => {
 
         <div className='about__wrapper'>
             <div className='about__content'>
-                <h5 className='subtitle'>Customer Satisfaction Study for a Major Telecom Company in   </h5>
-                <h5 className='subtitle'>South-East Asia</h5>
+                <h5 className='subtitle_services'>Customer Satisfaction Study for a Major Telecom Company in South-East Asia </h5>
                 <br></br>
                 
                 <h2 className='subheader'>Overview: 

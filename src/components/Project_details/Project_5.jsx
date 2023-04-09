@@ -10,8 +10,8 @@ const Project_5 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about__content'>
-                <h5 className='subtitle'>Development of a Comprehensive Conjoint Analysis Tool</h5>
+            <div >
+                <h5 className='subtitle_services'>Development of a Comprehensive Conjoint Analysis Tool</h5>
                 <br></br>
                 
 

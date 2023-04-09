@@ -11,7 +11,7 @@ const Project_14 = () => {
 
         <div className='about__wrapper'>
             <div className='about__content'>
-                <h5 className='subtitle'> Developing a Fully Automated Conjoint Analysis Tool</h5>
+                <h5 className='subtitle_services'> Developing a Fully Automated Conjoint Analysis Tool</h5>
                 <br></br>
                 
                 <h2 className='subheader'>Objective: 

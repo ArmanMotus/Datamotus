@@ -11,8 +11,7 @@ const Project_15 = () => {
 
         <div className='about__wrapper'>
             <div className='about__content'>
-                <h5 className='subtitle'> Big Data for Urban Planning </h5>
-                <h5 className='subtitle'>GIZ (Deutsche Gesellschaft für Internationale Zusammenarbeit)</h5>
+                <h5 className='subtitle_services'> Big Data for Urban Planning GIZ (Deutsche Gesellschaft für Internationale Zusammenarbeit)</h5>
                 <br></br>
                 
                 <h2 className='subheader'>Client Overview: 

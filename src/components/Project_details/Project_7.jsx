@@ -11,7 +11,7 @@ const Project_7 = () => {
 
         <div className='about__wrapper'>
             <div className='about__content'>
-                <h5 className='subtitle'> Development and Validation of a Proxy Tool to Pre-Screen Offenders for Risk to Reoffend</h5>
+                <h5 className='subtitle_services'> Development and Validation of a Proxy Tool to Pre-Screen Offenders for Risk to Reoffend</h5>
                 <br></br>
                 
                 <h2 className='subheader'>Client: 

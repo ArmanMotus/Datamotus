@@ -11,7 +11,7 @@ const Project_13 = () => {
 
         <div className='about__wrapper'>
             <div className='about__content'>
-                <h5 className='subtitle'>Predicting Repeated Purchases Using Demographic Data </h5>
+                <h5 className='subtitle_services'>Predicting Repeated Purchases Using Demographic Data </h5>
                 <br></br>
                 
                 <h2 className='subheader'>Introduction: 

@@ -11,7 +11,7 @@ const Hexact = () => {
 
         <div className='about__wrapper'>
             <div className='about__content'>
-                <h5 className='subtitle'>Unlocking the Power of Product Usage Data with Marketing and Product Analytics</h5>
+                <h5 className='subtitle_services'>Unlocking the Power of Product Usage Data with Marketing and Product Analytics</h5>
                 <br></br>
                 
                 <h2 className='subheader'>Background: 

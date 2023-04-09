@@ -10,8 +10,8 @@ const Project_8 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about__content'>
-                <h5 className='subtitle'>Dashboard for Subject Contests</h5>
+            <div >
+                <h5 className='subtitle_services'>Dashboard for Subject Contests</h5>
                 <br></br>
                 
                 <h2 className='subheader'>Introduction: 

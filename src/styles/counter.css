@@ -2,7 +2,7 @@
     margin-top: 30px;
     padding: 10px;
     width: 100%;
-    height: 100px;
+    height: 140px;
     background-color: rgb(84,196,148);
 }
 
@@ -41,6 +41,8 @@
 
 @media only screen and (max-width:992px){
     .counter{
-        width:120% ;
+        width:100% ;
     }
 }
+
+
