@@ -10,7 +10,7 @@ const Project_9 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about_content'>
+            <div className='about__content'>
                 <h5 className='subtitle'> Deployment and Implementation of LMS System for GIZ</h5>
                 <br></br>
                 

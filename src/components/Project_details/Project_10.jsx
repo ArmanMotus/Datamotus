@@ -10,7 +10,7 @@ const Project_10 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about_content'>
+            <div className='about__content'>
                 <h5 className='subtitle'> Microsoft Innovation Center Data Science Bootcamp </h5>
                 <br></br>
                 

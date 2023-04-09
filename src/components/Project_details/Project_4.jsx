@@ -10,7 +10,7 @@ const Project_4 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about_content'>
+            <div className='about__content'>
                 <h5 className='subtitle'>Developing a Real-Time Visualization Tool for Survey Monitoring using R shiny</h5>
                 <br></br>
                 

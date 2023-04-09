@@ -10,7 +10,7 @@ const Hexact = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about_content'>
+            <div className='about__content'>
                 <h5 className='subtitle'>Unlocking the Power of Product Usage Data with Marketing and Product Analytics</h5>
                 <br></br>
                 

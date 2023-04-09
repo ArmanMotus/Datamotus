@@ -10,7 +10,7 @@ const Project_8 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about_content'>
+            <div className='about__content'>
                 <h5 className='subtitle'>Dashboard for Subject Contests</h5>
                 <br></br>
                 

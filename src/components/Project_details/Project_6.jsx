@@ -10,7 +10,7 @@ const Project_6 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about_content'>
+            <div className='about__content'>
                 <h5 className='subtitle'>Rapid Nationwide Community Assessment on the Socio-Economic Impact of COVID-19 outbreak</h5>
                 <br></br>
                 

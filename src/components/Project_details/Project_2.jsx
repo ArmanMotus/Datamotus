@@ -9,7 +9,7 @@ const Project_1 = () => {
     <div className='container'>
     <div><BackButton /></div>     
         <div className='about__wrapper'>
-            <div className='about_content'>
+            <div className='about__content'>
                 <h5 className='subtitle'>Using Data Science to Predict Daily Cash Demand for Local Bank's ATM Machines</h5>
                 <br></br>
                 
