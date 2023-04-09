@@ -11,7 +11,8 @@ const Project_10 = () => {
 
         <div className='about__wrapper'>
             <div className='about__content'>
-                <h5 className='subtitle'> Microsoft Innovation Center Data Science Bootcamp </h5>
+                <h5 className='subtitle'> Microsoft Innovation Center </h5>
+                <h5 className='subtitle'>Data Science Bootcamp </h5>'
                 <br></br>
                 
                 <h2 className='subheader'> 

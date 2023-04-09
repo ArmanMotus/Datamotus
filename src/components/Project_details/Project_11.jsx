@@ -11,7 +11,8 @@ const Project_11 = () => {
 
         <div className='about__wrapper'>
             <div className='about__content'>
-                <h5 className='subtitle'> Developing a Predictive Model to Measure the Impact of Marketing Channels on attracting new visitors to website </h5>
+                <h5 className='subtitle'> Developing a Predictive Model to Measure the Impact of Marketing Channels on attracting new </h5>
+                <h5 className='subtitle'>visitors to website </h5>
                 <br></br>
                 
                 <h2 className='subheader'>Assignment:

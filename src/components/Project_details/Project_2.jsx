@@ -10,7 +10,9 @@ const Project_1 = () => {
     <div><BackButton /></div>     
         <div className='about__wrapper'>
             <div className='about__content'>
-                <h5 className='subtitle'>Using Data Science to Predict Daily Cash Demand for Local Bank's ATM Machines</h5>
+                <h5 className='subtitle'>Using Data Science to Predict Daily Cash Demand for Local Bank's</h5>
+                <h5 className='subtitle'>ATM Machines</h5>
+
                 <br></br>
                 
                 <h2 className='subheader'>Background: 
