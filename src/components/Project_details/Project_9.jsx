@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
-
+import aboutImg from '../../images/LMS.png'
 
 const Project_9 = () => {
   return (
@@ -10,7 +10,7 @@ const Project_9 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about__content'>
+            <div >
                 <h5 className='subtitle_services'> Deployment and Implementation of LMS System for GIZ</h5>
                 <br></br>
                 
@@ -81,7 +81,7 @@ const Project_9 = () => {
                 
             </div>
             <div className='about__img'>
-                {/* <img src={aboutImg} alt="" /> */}
+                <img src={aboutImg} alt="" />
             </div>
         </div>
     </div>

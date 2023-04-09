@@ -10,7 +10,7 @@ const Project_11 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className='about__content'>
+            <div>
                 <h5 className='subtitle_services'> Developing a Predictive Model to Measure the Impact of Marketing Channels on attracting new visitors to website</h5>
                 <br></br>
                 

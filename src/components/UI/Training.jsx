@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/trainings.css'
 import { useNavigate} from "react-router-dom";
 import '../../styles/projectDet.css';  
-import BackButton from './Scrolling/Back';
+import Slider from './Sliders/photos_sliderWVA'
 
 import course1 from '../../images/Byblos.png'
 import course2 from '../../images/CRRC.jpeg'
@@ -39,7 +39,6 @@ const Trainings = () => {
         Our focus on reproducible research ensures that your staff can create quality research outputs. 
         Contact us today to learn more about our customized training solutions for your organization.
         </p>
-        
         </div>
             </div>
                 </div>  
@@ -157,6 +156,8 @@ const Trainings = () => {
             </article>
             
         </div>
+        {/* < Slider/> */}
+
       </section>
 
   )

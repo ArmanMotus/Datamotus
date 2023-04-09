@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../UI/Scrolling/Back'
-
+import aboutImg from '../../images/hexact.png'
 
 const Hexact = () => {
   return (
@@ -89,7 +89,7 @@ const Hexact = () => {
                 
             </div>
             <div className='about__img'>
-                {/* <img src={aboutImg} alt="" /> */}
+                <img src={aboutImg} alt="" />
             </div>
         </div>
     </div>

@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
+import Slider from '../UI/Sliders/Photos_Slider_MIC'
 
 
 const Microsoft = () => {
@@ -23,6 +24,8 @@ const Microsoft = () => {
             <div className='about__img'>
                 {/* <img src={aboutImg} alt="" /> */}
         </div>
+
+        <Slider/>
     </div>
 </section>
 

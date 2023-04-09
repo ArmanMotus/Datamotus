@@ -1,7 +1,7 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
-
+import Slider from '../../components/UI/Sliders/Photos_slider_digitain'
 
 const Digitain = () => {
   return (
@@ -21,6 +21,7 @@ const Digitain = () => {
             <div className='about__img'>
                 {/* <img src={aboutImg} alt="" /> */}
         </div>
+        < Slider/>
     </div>
 </section>
 

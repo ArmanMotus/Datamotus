@@ -1,6 +1,7 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
+import Slider from '../UI/Sliders/photos_sliderWVA'
 
 
 const WVA = () => {
@@ -21,7 +22,10 @@ const WVA = () => {
             <div className='about__img'>
                 {/* <img src={aboutImg} alt="" /> */}
         </div>
+        < Slider/>
+
     </div>
+    
 </section>
 
     

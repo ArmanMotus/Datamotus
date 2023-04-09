@@ -10,7 +10,7 @@ const Project_14 = () => {
     <BackButton />     
 
         <div className='about__wrapper'>
-            <div className=''>
+            <div >
                 <h5 className='subtitle_services'> Developing a Fully Automated Conjoint Analysis Tool</h5>
                 <br></br>
                 
