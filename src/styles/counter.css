@@ -59,3 +59,18 @@
 
 }
 
+@media only screen and (max-width:412px){
+     .counter{
+        width: 100% ;
+     }
+
+     .counter__number{
+        font-size: 0.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .counter__title {
+        font-size: 0.8rem;
+    }
+}
+

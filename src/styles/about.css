@@ -106,3 +106,59 @@
     }
     
 }
+
+@media only screen and (max-width:412px){
+    
+    .subtitle{
+        font-size: 1rem;
+    }
+    .description__about__content-desc{
+        font-size: 0.57rem;
+        display: flex;
+        margin-bottom: -20px;
+    }
+    .choose_us-title {
+        margin-top: 30px;
+        color: #000000;
+        font-weight: 500;
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 1rem;
+        
+    }
+    
+    .about_learn_button{
+        margin-top: 10px;
+    }
+
+    .about_btn{
+        font-size: 0.57rem;
+    }
+    
+    .about__img {
+       height: 510px;
+    }
+    
+   
+    
+    .choose__us-icon{
+        margin-top: 25px;
+    }
+    
+    .choose_us-title {
+        color: #000000;
+        font-weight: 500;
+        font-size: 0.8rem;
+        width: 300%;
+    }
+    
+    .description__about{
+        margin-top: 10px;
+        color: #050101;
+        font-size: 0.57rem;
+        width: 250%;
+    }
+    
+}

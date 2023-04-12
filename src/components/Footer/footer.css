@@ -64,3 +64,40 @@
         width: 50%;
     }
 }
+
+@media only screen and (max-width:412px){
+    
+    .footer{
+        width: 100%;
+        
+    }
+    .footer__quick-links {
+        width: 40%;
+    }
+    
+    .small__text {
+        font-size: 0.5rem;
+        margin-top: 5px;
+        font-weight: 400;
+
+    }
+    .quick__link-item a{
+        font-size: 0.7rem;
+        font-weight: 400;
+    }
+    .quick__link-title {
+        font-size: 0.8rem;
+        color: var(--primary-color);
+        font-weight: 500;
+        margin-bottom: 5px;
+    }
+    .quick__link-item{
+        margin-bottom: 5px;
+    }
+    .footer__logo h2{
+        font-size: 1rem;
+    }
+    .quick__link-item-social{
+        font-size: 200%;
+    }
+}

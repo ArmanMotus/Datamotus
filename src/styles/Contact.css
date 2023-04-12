@@ -48,3 +48,14 @@
       margin-left: 300px;
     }
   }
+
+  @media only screen and (max-width:412px){
+    .contact-container {
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    .contact-form button {
+      margin-left: 120px;
+    }
+  }
