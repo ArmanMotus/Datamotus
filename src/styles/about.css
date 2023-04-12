@@ -8,6 +8,9 @@
     width: 2000px;
 }
 
+
+
+
 .about__img img{
     width: 100%;
     height: 100%;
@@ -15,9 +18,9 @@
     border-radius: 0.5rem;
 }
 
-.about__content-desc{
+.description__about__content-desc{
     display: flex;
-    margin-top: 10px;
+    margin-top: 10px; 
 }
 
 .choose__item-wrapper{
@@ -78,4 +81,28 @@
 .about_btn{
     background: var(--btn-primary-bg);
     border: 10px solid var(--btn-primary-bg);
+}
+
+
+@media only screen and (max-width:810px){
+    .subtitle{
+        font-size: 1.5rem;
+    }
+    .description__about__content-desc{
+        font-size: 0.8rem;
+    }
+    .choose_us-title {
+        color: #000000;
+        font-weight: 500;
+        font-size: 0.8rem;
+        font-weight: bolder;
+    }
+    p{
+        font-size: 0.7rem;
+    }
+    
+    .about_learn_button{
+        margin-top: 10px;
+    }
+    
 }

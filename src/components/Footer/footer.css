@@ -53,3 +53,14 @@
     font-size: 250%;
     cursor: pointer;
 }
+
+@media only screen and (max-width:810px){
+    
+    .footer{
+        width: 145%;
+        
+    }
+    .footer__quick-links {
+        width: 50%;
+    }
+}

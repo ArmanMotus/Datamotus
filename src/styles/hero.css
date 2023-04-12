@@ -4,6 +4,7 @@
 }
 
 .hero__img{
+    display: flex;
     width: -0.5%;   
 }
 
@@ -71,5 +72,36 @@
 
     .hero__img{
         width: 70%;
+    }
+}
+
+@media only screen and (max-width:810px){
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    
+    .hero__content h3 {
+        font-size: 1.3rem;
+    } 
+    
+    .hero__content h2{
+        font-size: 1.8rem;
+        line-height: 30px;
+    }
+
+    .hero__btns{
+        column-gap: 2rem;
+    }
+
+    
+    .hero__img{
+        height: 400px;
+        width: 400px;
+    }
+    
+    .primary__btn,
+    .secondary__btn{
+        padding: 0.2rem 1.2rem;
     }
 }
