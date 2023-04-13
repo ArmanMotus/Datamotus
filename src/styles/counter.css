@@ -60,17 +60,25 @@
 }
 
 @media only screen and (max-width:480px){
-     /* .counter{
-        width: 102% ;
+    .counter{
+        width:102% ;
+        height: 50%;
+    } 
+    /* .container{
+        width: 100% ;
      } */
 
      .counter__number{
         font-size: 0.8rem;
         margin-bottom: 10px;
+        margin-left: -30px;
+        padding-inline: 30px;
     }
     
     .counter__title {
-        font-size: 0.8rem;
+        font-size: 0.6rem;
+        margin-left: -30px;
+        padding-inline: 10px;
     }
 }
 
