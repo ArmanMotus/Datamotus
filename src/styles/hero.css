@@ -109,7 +109,7 @@
 
 @media only screen and (max-width:480px){
     .container{
-        width: 100%;
+        width: 90%;
         height: auto;
 
     }
@@ -133,14 +133,14 @@
 
     
      .hero__img{
-        height: 210px;
-        width: 200px;
+        height: 200px;
+        width: 240px;
         margin-top: 50px;
     }
     
     .primary__btn,
     .secondary__btn{
-        padding: 0.3rem 1.2rem;
+        padding: 0.2rem 1.4rem;
         font-size: 10px;
     } 
 }
