@@ -42,3 +42,16 @@
         margin: auto;
     }
 }
+
+@media only screen and (max-width:412px){
+    .slider__wrapper{
+        width: 100%;
+        margin: auto;
+    }
+    h2{
+        font-size: 1.2rem;
+    }
+    .description {
+        font-size: 0.8rem;
+    }
+}

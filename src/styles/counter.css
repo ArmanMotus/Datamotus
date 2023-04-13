@@ -61,7 +61,7 @@
 
 @media only screen and (max-width:412px){
      .counter{
-        width: 100% ;
+        width: 105% ;
      }
 
      .counter__number{
