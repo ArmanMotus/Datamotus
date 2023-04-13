@@ -107,7 +107,7 @@
 }
 
 
-@media only screen and (max-width:412px){
+@media only screen and (max-width:428px){
     .container{
         width: 100%;
         height: auto;
@@ -144,3 +144,4 @@
         font-size: 10px;
     } 
 }
+
