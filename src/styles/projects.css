@@ -99,9 +99,7 @@
 
 
 @media only screen and (max-width:480px){
-    .container{
-        width: 100%;
-    }
+    
     
     .project__title{
         font-size: 0.5rem;
