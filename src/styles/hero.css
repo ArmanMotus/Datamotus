@@ -115,7 +115,7 @@
     }
     
     .hero__content h3 {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         margin-top: 20px;
     } 
     
@@ -133,8 +133,8 @@
 
     
      .hero__img{
-        height: 210px;
-        width: 270px;
+        height: 200px;
+        width: 300px;
         margin-top: 50px;
     }
     

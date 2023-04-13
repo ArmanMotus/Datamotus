@@ -81,7 +81,7 @@
 
     }
     .quick__link-item a{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         font-weight: 400;
     }
     .quick__link-title {
@@ -94,7 +94,7 @@
         margin-bottom: 5px;
     }
     .footer__logo h2{
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .quick__link-item-social{
         font-size: 200%;
