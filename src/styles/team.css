@@ -116,7 +116,7 @@
     .team__wrapper {
         display: flex;
         align-items: center;
-        column-gap: 0.7rem;
+        column-gap: 0.6rem;
     }
     .team__item{
         background: var(--team-card-bg);
@@ -145,14 +145,14 @@
     .team__details h4{
         color: var(--primary-color);
         font-weight: 1000;
-        font-size: 0.45rem;
+        font-size: 0.4rem;
         margin-top: -10px;
         
     }
     
     .team__details p{
         font-weight: 500;
-        font-size: 0.45rem;
+        font-size: 0.4rem;
         margin-top: -15px;
     }
 
