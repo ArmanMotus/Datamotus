@@ -11,8 +11,7 @@ const Project_12 = () => {
 
         <div className='about__wrapper'>
             <div >
-                <h5 className='subtitle_services'>  Development of a Churn Prediction Model Using</h5>
-                <h5 className='subtitle_services'>  Machine Learning </h5>
+                <h5 className='subtitle_services'>  Development of a Churn Prediction Model Using Machine Learning</h5>
 
                 <br></br>
                 

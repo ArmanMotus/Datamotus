@@ -12,13 +12,13 @@ const Byblos = () => {
 
         <h2 className='subheaderTrain'>Short description of the training:</h2> 
                 <ul className='description'>
-                    <li className='lists'>Introduction to R.</li>
-                    <li className='lists'>Data structures in R.</li>
-                    <li className='lists'>Train, test, and validate the models.</li>
-                    <li className='lists'>Importing and exporting data in R.</li>
-                    <li className='lists'>Data visualization with R and grammar of graphics.</li>
-                    <li className='lists'>Data Manipulations with R and dplyr.</li>
-                    <li className='lists'>Creating reproducible research with R markdown</li>
+                    <li className='lister'>Introduction to R.</li>
+                    <li className='lister'>Data structures in R.</li>
+                    <li className='lister'>Train, test, and validate the models.</li>
+                    <li className='lister'>Importing and exporting data in R.</li>
+                    <li className='lister'>Data visualization with R and grammar of graphics.</li>
+                    <li className='lister'>Data Manipulations with R and dplyr.</li>
+                    <li className='lister'>Creating reproducible research with R markdown</li>
                 </ul> 
                 <br></br> <br></br>
                 

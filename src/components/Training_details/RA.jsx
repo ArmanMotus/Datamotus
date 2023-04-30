@@ -12,10 +12,10 @@ const RA = () => {
 
         <h2 className='subheaderTrain'>Short description of the training:</h2> 
                 <ul className='description'>
-                    <li className='lists'>Types of variables.</li>
-                    <li className='lists'>Visualization of numeric variables.</li>
-                    <li className='lists'>Visualization of categorical variables.</li>
-                    <li className='lists'>Visualization of the relationship between numeric and categorical variables, categorical variables, numeric variables.</li>
+                    <li className='lister'>Types of variables.</li>
+                    <li className='lister'>Visualization of numeric variables.</li>
+                    <li className='lister'>Visualization of categorical variables.</li>
+                    <li className='lister'>Visualization of the relationship between numeric and categorical variables, categorical variables, numeric variables.</li>
                 </ul> 
                 <br></br> <br></br>
                 

@@ -11,13 +11,13 @@ const Europe = () => {
 
         <h2 className='subheaderTrain'>Short description of the training:</h2> 
                 <ul className='description'>
-                    <li className='lists'>Kirkpatrick’s four levels of training evaluation.</li>
-                    <li className='lists'>Efficient questionnaire design.</li>
-                    <li className='lists'>Choice of most important variables.</li>
-                    <li className='lists'>Choice of data collection methods.</li>
-                    <li className='lists'>Choice of operationalization.</li>
-                    <li className='lists'>Variable scales.</li>
-                    <li className='lists'>Data Analysis</li>
+                    <li className='lister'>Kirkpatrick’s four levels of training evaluation.</li>
+                    <li className='lister'>Efficient questionnaire design.</li>
+                    <li className='lister'>Choice of most important variables.</li>
+                    <li className='lister'>Choice of data collection methods.</li>
+                    <li className='lister'>Choice of operationalization.</li>
+                    <li className='lister'>Variable scales.</li>
+                    <li className='lister'>Data Analysis</li>
                 </ul> 
                 <br></br> <br></br>
                 

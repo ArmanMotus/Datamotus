@@ -10,13 +10,13 @@ const CRRC = () => {
     <BackButton />     
         <h2 className='subheaderTrain'>Short description of the training:</h2> 
                 <ul className='description'>
-                    <li className='lists'>Introduction to R.</li>
-                    <li className='lists'>Data structures in R.</li>
-                    <li className='lists'>Importing and exporting data in R.</li>
-                    <li className='lists'>Data visualization with R and grammar of graphics.</li>
-                    <li className='lists'>Univariate and multivariate statistics with R.</li>
-                    <li className='lists'>Regression analysis.</li>
-                    <li className='lists'>Creating reproducible research with R markdown</li>
+                    <li className='lister'>Introduction to R.</li>
+                    <li className='lister'>Data structures in R.</li>
+                    <li className='lister'>Importing and exporting data in R.</li>
+                    <li className='lister'>Data visualization with R and grammar of graphics.</li>
+                    <li className='lister'>Univariate and multivariate statistics with R.</li>
+                    <li className='lister'>Regression analysis.</li>
+                    <li className='lister'>Creating reproducible research with R markdown</li>
                 </ul> 
                 <br></br> <br></br>
                 

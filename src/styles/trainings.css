@@ -53,3 +53,28 @@
     margin: 1.2rem 0 2rem;
     font-size: 0.9rem;
 }
+
+
+@media only screen and (max-width:480px){
+    .courses__container{
+        display:grid;
+        grid-template-columns: repeat(1, 3fr);
+        gap: 5rem;
+        font-size: 0.9rem;
+    }
+
+    .courses__container p{
+        font-size: 0.9rem;
+    }
+
+
+    .about__content-desc{
+        font-size: 0.7rem;
+        margin-inline: 10px;
+    }
+
+    .subtitle_train{
+        font-size: 1.2rem;
+        font-weight: 400;
+    }
+}

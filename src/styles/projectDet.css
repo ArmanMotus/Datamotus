@@ -118,3 +118,64 @@
     background: var(--btn-primary-bg);
     border: 1px solid var(--btn-primary-bg);
 }
+
+
+
+@media only screen and (max-width:480px){
+    .about__img{
+        width: 1000px;
+    }
+    
+    
+    .subtitle_services{
+        font-size: 0.62rem;
+        font-weight: 100px;
+        color: var(--primary-color);
+    }
+    
+    
+    .about__img img{
+        width: 93%;
+        height: 130%;
+        object-fit:fill;
+        border-radius: 1.5rem;
+    }
+    
+    .subheader {
+        font-size: 0.58rem;
+        margin-bottom: -20px;
+          
+    }
+    
+    .about__content-desc p{
+        font-size: 0.5rem;
+        margin-inline: 5px;
+        line-height: 15px;
+    }
+    
+    .about__content-desc {
+        font-size: 0.5rem;
+        margin-inline: 5px;
+        line-height: 16px;
+    }
+    
+    .lists {
+        margin-inline: 10px;    
+        font-size: 0.6rem;
+       
+    }
+    
+    .lists_services {
+        font-size: 0.6rem;
+    }
+
+    .lister {
+        margin-inline: 10px;    
+        font-size: 0.8rem;
+       
+    }
+
+    .subheaderTrain{
+        font-size: 1rem;
+    }
+}

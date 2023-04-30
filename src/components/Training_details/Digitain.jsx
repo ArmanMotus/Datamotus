@@ -11,9 +11,9 @@ const Digitain = () => {
 
         <h2 className='subheaderTrain'>Short description of the training:</h2> 
                 <ul className='description'>
-                    <li className='lists'>Introduction to R programming and Statistical learning.</li>
-                    <li className='lists'>Design of Experiments.</li>
-                    <li className='lists'>Analysis of the experiment results: Hypothesis testing.</li>
+                    <li className='lister'>Introduction to R programming and Statistical learning.</li>
+                    <li className='lister'>Design of Experiments.</li>
+                    <li className='lister'>Analysis of the experiment results: Hypothesis testing.</li>
                 </ul> 
                 <br></br> <br></br>
                 

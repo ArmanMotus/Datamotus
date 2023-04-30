@@ -12,11 +12,11 @@ const Microsoft = () => {
 
         <h2 className='subheaderTrain'>Short description of the training:</h2> 
                 <ul className='description'>
-                    <li className='lists'>R for Data Science.</li>
-                    <li className='lists'>Python for Data Science.</li>
-                    <li className='lists'>Data visualization with R and Python.</li>
-                    <li className='lists'>Machine Learning with R.</li>
-                    <li className='lists'>Machine Learning with Python.</li>
+                    <li className='lister'>R for Data Science.</li>
+                    <li className='lister'>Python for Data Science.</li>
+                    <li className='lister'>Data visualization with R and Python.</li>
+                    <li className='lister'>Machine Learning with R.</li>
+                    <li className='lister'>Machine Learning with Python.</li>
                 </ul> 
                 <br></br> <br></br>
                 

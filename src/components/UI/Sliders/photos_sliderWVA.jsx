@@ -31,22 +31,22 @@ const slid = ({theme}) => {
                 </h2> */}
              </div>
             {/* <img src={aboutImg} alt="" /> */}
-            <div >
+            <div className="slider-container">
             <Slider {...settings}>
                 <div>
-                        <img src={img1} alt=" " />
+                        <img src={img1} alt=" " className='slider-image'/>
                 </div>
                 <div>
-                        <img src={img2} alt=" " />
+                        <img src={img2} alt=" " className='slider-image'/>
                 </div>
                 <div>
-                        <img src={img3} alt=" " />
+                        <img src={img3} alt=" " className='slider-image'/>
                 </div>
                 <div>
-                        <img src={img4} alt=" " />
+                        <img src={img4} alt=" " className='slider-image'/>
                 </div>
                 <div>
-                        <img src={img5} alt=" " />
+                        <img src={img5} alt=" " className='slider-image'/>
                 </div>
                 
                
