@@ -136,7 +136,7 @@
     
     .about__img img{
         width: 93%;
-        height: 130%;
+        height: 100%;
         object-fit:fill;
         border-radius: 1.5rem;
     }
