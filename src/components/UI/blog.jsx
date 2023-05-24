@@ -1,5 +1,5 @@
 import React from 'react'
-import '../../styles/Contact.css';
+import '../../styles/blog.css';
 
 
 const blog = () => {
@@ -7,7 +7,7 @@ const blog = () => {
     <section>
       
     <div className="container">
-    <div className="contact-container">  
+    <div className="blog-container">  
     <div className="map-container">
       <iframe
         src="https://armandata.shinyapps.io/test1/"
