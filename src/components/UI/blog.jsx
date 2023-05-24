@@ -10,7 +10,7 @@ const blog = () => {
     <div className="contact-container">  
     <div className="map-container">
       <iframe
-        src=""
+        src="https://armandata.shinyapps.io/test1/"
         width="100%"
         height="450"
         frameBorder="0"
