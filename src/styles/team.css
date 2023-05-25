@@ -126,7 +126,7 @@
         display: flex;
         align-items: center;
         column-gap: 8.3rem;
-        margin-left: 70px;
+        margin-left: 35px;
     }
     .team__item{
         background: var(--team-card-bg);
