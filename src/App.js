@@ -63,7 +63,6 @@ function App() {
       
       <Routes>
       
-
         <Route path="/datamotus" element={<Home theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/projects" element={<Projects theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme}/>} />
