@@ -7,7 +7,11 @@
     margin-left: -20px;
     margin-top: 50px;
   }
-  
+  .blcontainer{
+    width: 1300px;
+    margin-top: 100px;
+    margin-left: 150px;
+}
   .blog-form {
     margin-top: 20px;
     display: flex;
@@ -38,6 +42,14 @@
     margin-left: 500px;
   }
 
+  .iframe-container {
+    overflow: hidden;
+  }
+  
+  .hidden-scroll {
+    overflow: hidden !important;
+  }
+
   @media only screen and (max-width:810px){
     .blog-container {
       width: 100%;
@@ -50,6 +62,11 @@
   }
 
   @media only screen and (max-width:480px){
+    .blcontainer{
+      width: 430px;
+      margin-top: 100px;
+      margin-left: 10px;
+  }
     .blog-container {
       width: 100%;
       margin-left: 0px;
