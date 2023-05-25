@@ -8,7 +8,7 @@
 }
 
 .team__item{
-    width: 25%;
+    width: 20%;
     background: var(--team-card-bg);
     border-radius: 5px;
 }
@@ -58,11 +58,20 @@
 .team__wrapper {
     display: flex;
     align-items: center;
-    column-gap: 2rem;
+    column-gap: 19.8rem;
+    margin-left: 220px;
+
 }
 
 
 @media only screen and (max-width:810px){
+    .team__wrapper {
+        display: flex;
+        align-items: center;
+        column-gap: 18.5rem;
+        margin-left: 90px;
+        padding: 30px;
+    }
     .team__details{
         padding: 0px 0px;
     
@@ -116,7 +125,8 @@
     .team__wrapper {
         display: flex;
         align-items: center;
-        column-gap: 0.6rem;
+        column-gap: 8.3rem;
+        margin-left: 70px;
     }
     .team__item{
         background: var(--team-card-bg);

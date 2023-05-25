@@ -148,26 +148,26 @@ const teamMembers =[
         position: 'Co-Founder'
     },
     
-    {
-        imgUrl: team03,
-        name: 'Lusine Zilfimian',
-        title: 'Data Scientist',
-        position:'Team'
-    },
+    // {
+    //     imgUrl: team03,
+    //     name: 'Lusine Zilfimian',
+    //     title: 'Data Scientist',
+    //     position:'Team'
+    // },
 
-    {
-        imgUrl: team04,
-        name: 'Tatevik Karapetyan',
-        title: 'Data Scientist',
-        position: 'Team'
-    },
+    // {
+    //     imgUrl: team04,
+    //     name: 'Tatevik Karapetyan',
+    //     title: 'Data Scientist',
+    //     position: 'Team'
+    // },
 
-    {
-        imgUrl: team05,
-        name: 'Arman Manjian',
-        title: 'Data Engineer',
-        position: 'Team'
-    },
+    // {
+    //     imgUrl: team05,
+    //     name: 'Arman Manjian',
+    //     title: 'Data Engineer',
+    //     position: 'Team'
+    // },
     
 ]
 
