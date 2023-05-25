@@ -123,11 +123,11 @@
 @media only screen and (max-width:480px){
     
     .team__wrapper {
-        display: flex;
-        align-items: center;
-        column-gap: 0.5rem;
-        margin-right: -110px;
+        display: grid;
+        grid-gap: 1rem;
+        margin-right: -150px;
     }
+    
     .team__item{
         background: var(--team-card-bg);
         border-radius: 10px;
