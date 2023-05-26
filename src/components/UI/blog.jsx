@@ -9,7 +9,7 @@ const blog = () => {
     <div >  
     <div >
       <iframe
-        src="https://armandata.shinyapps.io/test3/"
+        // src="https://armandata.shinyapps.io/test3/"
         width="100%"
         height="1000"
         frameBorder="0"

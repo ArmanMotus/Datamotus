@@ -85,14 +85,14 @@ function App() {
         <Route path="/projects/Project_14" element={<Project_14 />} />
         <Route path="/projects/Project_15" element={<Project_15 />} />
         <Route path="/projects/Project_16" element={<Project_16 />} />
-        <Route path="/datamotus/Project_2" element={<Project_2 />} />  
-        <Route path="/datamotus/Project_3" element={<Project_3 />} /> 
-        <Route path="/datamotus/Project_6" element={<Project_6 />} />   
-        <Route path="/datamotus/Project_4" element={<Project_4 />} />  
-        <Route path="/datamotus/Project_5" element={<Project_5 />} />  
-        <Route path="/datamotus/Project_14" element={<Project_14 />} />  
-        <Route path="/datamotus/Project_15" element={<Project_15 />} />  
-        <Route path="/datamotus/Project_16" element={<Project_16 />} /> 
+        <Route path="Project_2" element={<Project_2 />} />  
+        <Route path="Project_3" element={<Project_3 />} /> 
+        <Route path="Project_6" element={<Project_6 />} />   
+        <Route path="Project_4" element={<Project_4 />} />  
+        <Route path="Project_5" element={<Project_5 />} />  
+        <Route path="Project_14" element={<Project_14 />} />  
+        <Route path="Project_15" element={<Project_15 />} />  
+        <Route path="Project_16" element={<Project_16 />} /> 
         <Route path="/trainings/Byblos" element={<Byblos />} /> 
         <Route path="/trainings/CRRC" element={<CRRC />} /> 
         <Route path="/trainings/HMC" element={<HMC />} /> 
