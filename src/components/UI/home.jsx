@@ -138,14 +138,18 @@ const teamMembers =[
         imgUrl: team01,
         name: 'Habet Madoyan',
         title: 'Data Scientist',
-        position: 'Co-Founder, CEO'
+        position: 'Co-Founder, CEO',
+        linkedinUrl: 'https://www.linkedin.com/in/habetmadoyanmba/'
+
     },
 
     {
         imgUrl: team02,
         name: 'Vahe Movsisyan',
         title: 'Data Scientist',
-        position: 'Co-Founder'
+        position: 'Co-Founder',
+        linkedinUrl: 'https://www.linkedin.com/in/vahe-movsisyan-1a2b043b/'
+
     },
     
     // {
@@ -365,12 +369,11 @@ history(link1)
                             <p className="description">{item.position}</p>
     
                             <div className="team__member-social">
-                                <span>
-                                    <i class="ri-linkedin-line"></i>
-                                </span>
-                                <span>
-                                    <i class="ri-twitter-line"></i> 
-                                </span>
+                                 <a href={item.linkedinUrl} target="_blank" rel="noopener noreferrer">
+                                    <span>
+                                        <i className="ri-linkedin-line" ></i>
+                                    </span>
+                                </a>
                             </div>
                         </div>
                     </div>  
