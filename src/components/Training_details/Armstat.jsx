@@ -1,0 +1,33 @@
+import React from 'react'
+import '../../styles/projectDet.css';  
+import BackButton from '../../components/UI/Scrolling/Back'
+
+
+const armstat = () => {
+  return (
+    <section >
+    <div className='container'>
+    <BackButton />     
+        <h2 className='subheaderTrain'>Short description of the training:</h2> 
+                <ul className='description'>
+                    <li className='lister'>Introduction to R.</li>
+                    <li className='lister'>Data structures in R.</li>
+                    <li className='lister'>Importing and exporting data in R.</li>
+                    <li className='lister'>Data visualization with R and grammar of graphics.</li>
+                    <li className='lister'>Univariate and multivariate statistics with R.</li>
+                    <li className='lister'>Regression analysis.</li>
+                    <li className='lister'>Creating reproducible research with R markdown</li>
+                </ul> 
+                <br></br> <br></br>
+                
+            
+            <div className='about__img'>
+                {/* <img src={aboutImg} alt="" /> */}
+        </div>
+    </div>
+</section>
+
+    
+  )
+}
+export default armstat;

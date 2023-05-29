@@ -30,6 +30,7 @@ import Project_13 from './components/Project_details/Project_13'
 import Project_14 from './components/Project_details/Project_14'
 import Project_15 from './components/Project_details/Project_15'
 import Project_16 from './components/Project_details/Project_16'
+import Armstat from './components/Training_details/Armstat';
 import Byblos from './components/Training_details/Byblos';
 import CRRC from './components/Training_details/CRRC';
 import HMC from './components/Training_details/HMC';
@@ -93,6 +94,7 @@ function App() {
         <Route path="Project_14" element={<Project_14 />} />  
         <Route path="Project_15" element={<Project_15 />} />  
         <Route path="Project_16" element={<Project_16 />} /> 
+        <Route path="/trainings/armstat" element={<Armstat />} /> 
         <Route path="/trainings/Byblos" element={<Byblos />} /> 
         <Route path="/trainings/CRRC" element={<CRRC />} /> 
         <Route path="/trainings/HMC" element={<HMC />} /> 

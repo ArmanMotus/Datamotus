@@ -14,6 +14,7 @@ import course7 from '../../images/world-vision.png'
 import course8 from '../../images/digitain.png'
 import course9 from '../../images/Ameria.png'
 import course10 from '../../images/VIVA.png'
+import course11 from '../../images/armstat.jpg'
 
 const Trainings = () => {
 
@@ -43,6 +44,17 @@ const Trainings = () => {
             </div>
                 </div>  
         <div className="container courses__container">
+             <article className="course" onClick={(e) => handleSomething('/trainings/Armstat')}>
+              <div className="course__image">
+                  <img src={course11} width={250} height={200} alt="" />
+              </div>
+              <h4> Statistical Committee of the Republic of Armenia</h4>
+              <p>
+              Data Analytics With R
+              </p>
+              <a link ='' className='btn btn-primary'>September 2022-October 2022</a>
+            </article>
+            
             <article className="course"  onClick={(e) => handleSomething('/trainings/Byblos')}>
               <div className="course__image">
                   <img src={course1} width={250} height={200} alt="" />
@@ -68,7 +80,7 @@ const Trainings = () => {
 
             <article className="course" onClick={(e) => handleSomething('/trainings/HMC')}>
               <div className="course__image">
-                  <img src={course3} width={250} height={250} alt="" />
+                  <img src={course3} width={200} height={200} alt="" />
               </div>
               <h4>HMC SNCO</h4>
               <p>
@@ -91,7 +103,7 @@ const Trainings = () => {
 
             <article className="course" onClick={(e) => handleSomething('/trainings/Microsoft')}>
               <div className="course__image">
-                  <img src={course5}  width={200} height={200} alt="" />
+                  <img src={course5}  width={250} height={250} alt="" />
               </div>
               <h4>Microsoft Innovation Center in Armenia</h4>
               <p>
@@ -113,7 +125,7 @@ const Trainings = () => {
 
             <article className="course" onClick={(e) => handleSomething('/trainings/WVA')}>
               <div className="course__image">
-                  <img src={course7} style={{height:150, width:250, margin:-30 }} alt="" />
+                  <img src={course7} style={{height:250, width:350, margin:-25 }} alt="" />
               </div>
               <h4> World Vision Armenia</h4>
               <p>
@@ -135,7 +147,7 @@ const Trainings = () => {
 
             <article className="course" onClick={(e) => handleSomething('/trainings/Ameria')}>
               <div className="course__image">
-                  <img src={course9} style={{height:100, width:250, margin:-30}} alt="" />
+                  <img src={course9} style={{height:150, width:250, margin:-30}} alt="" />
               </div>
               <h4>Ameriabank</h4>
               <p>
