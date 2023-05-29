@@ -120,8 +120,48 @@
     } 
     
     .hero__content h2{
+        font-size: 0.6rem;
+        line-height: 1;
+        margin-bottom: 20px;
+    }
+
+     .hero__btns{
+        column-gap: 0.1rem;
+        margin-top: -30px;
+        
+    }
+
+    
+     .hero__img{
+        height: 150px;
+        width: 300px;        
+        margin-top: 80px;
+        margin-left: 50px;
+
+    }
+    
+    .primary__btn,
+    .secondary__btn{
+        padding: 0.1rem 0.7rem;
+        font-size: 8px;
+    } 
+}
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+
+    .container{
+        width: 100%;
+        height: auto;
+    }
+    
+    .hero__content h3 {
+        font-size: 0.78rem;
+        margin-top: 20px;
+    } 
+    
+    .hero__content h2{
         font-size: 0.7rem;
-        line-height: 1px;
+        line-height: 2px;
         margin-bottom: 20px;
 
     }
@@ -135,8 +175,8 @@
     
      .hero__img{
         height: 180px;
-        width: 300px;        
-        margin-top: 80px;
+        width: 220px;        
+        margin-top: 70px;
     }
     
     .primary__btn,

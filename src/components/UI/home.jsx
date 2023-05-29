@@ -210,8 +210,8 @@ history(link1)
             <div className='hero__wrapper'>
                 <div className='hero__content'>
                     <div>
-                        <h2>DATA MINING AND </h2>
-                        <h2>MACHINE LEARNING</h2>
+                        <h2>DATA MINING AND 
+                        MACHINE LEARNING</h2>
                         <h3 className='highlight'>WE TURN DATA INTO ACTIONABLE INSIGHTS FOR YOUR BUSINESS </h3>
                     </div>
                     <p className='description'> </p>
