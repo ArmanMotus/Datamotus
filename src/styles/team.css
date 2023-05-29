@@ -133,14 +133,15 @@
     
     .team__wrapper {
         display: flex;
-        grid-gap: 4rem;
-        margin-left: -55px;
+        justify-content: space-between;
     }
     
     .team__item{
         background: var(--team-card-bg);
         border-radius: 10px;
-        margin-left: 65px;
+        margin-left: -120px;
+
+
     }
     
     .team__details{
