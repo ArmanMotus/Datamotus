@@ -361,7 +361,7 @@ history(link1)
                         <div className="team__item" key={index}>
                         <div className="team__img">
                             <img src={item.imgUrl} alt="" />
-                        </div>
+                        
     
                         <div className="team__details">
                             <h4>{item.name}</h4>
@@ -374,6 +374,7 @@ history(link1)
                                         <i className="ri-linkedin-line" ></i>
                                     </span>
                                 </a>
+                            </div>
                             </div>
                         </div>
                     </div>  
