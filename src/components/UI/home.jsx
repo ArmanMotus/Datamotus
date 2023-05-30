@@ -337,9 +337,9 @@ history(link1)
                         ))}
                     </div>
                 </div>
-                <div className='about__img'>
+                {/* <div className='about__img'>
                     <img src={aboutImg} alt="" />
-                </div>
+                </div> */}
             </div>
         </div>
     </section>
