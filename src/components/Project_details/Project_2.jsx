@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../UI/Scrolling/Back'
 import aboutImg from '../../images/cash_demand.png'
+import projectImg from '../../images/Projects/project_2.png'
 
 const Project_1 = () => {
   return (
@@ -10,6 +11,7 @@ const Project_1 = () => {
     <div><BackButton /></div>     
         <div className='about__wrapper'>
             <div>
+                <div className='about__img'><img src = {projectImg}></img></div>
                 <h5 className='subtitle_services'>Using Data Science to Predict Daily Cash Demand for Local Bank's ATM Machines</h5>
                 <br></br>
                 
@@ -91,9 +93,9 @@ const Project_1 = () => {
                 </h2>
                 
             </div>
-            <div className='about__img'>
+            {/* <div className='about__img'>
                 <img src={aboutImg} alt="" />
-            </div>
+            </div> */}
         </div>
     </div>
 </section>

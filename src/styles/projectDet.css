@@ -2,7 +2,6 @@
     display: flex;
     column-gap: 2rem;
     margin-top: 100px;
-
 }
 
 .about__content,.about__img{
@@ -24,10 +23,12 @@
     font-size: 2rem;    
 }
 .about__img img{
-    width: 93%;
-    height: 100%;
+    width: 900px;
+    height: 300px;
+    margin-left: 20px;
     object-fit:fill;
     border-radius: 1.5rem;
+    margin-bottom: 25px;
     
 }
 
@@ -55,12 +56,10 @@
     
 }
 .about__content-desc{
-    display: flex;
     font-size: 0.9rem;
     font-weight: normal;
-    margin-inline: 20px;
-    
-
+    margin-inline: 10px;
+    max-width: 900px; /* You can adjust this value to fit your needs */
 }
 
 .choose__item-wrapper{
@@ -156,25 +155,45 @@
  
  
  
-     @media only screen and (max-width:480px){
+@media only screen and (max-width:480px)
+{
+        
+    .about__img img{
+            width: 310px;
+            height: 200px;
+            margin-left: 20px;
+            object-fit:fill;
+            border-radius: 1.5rem;
+            margin-top: 15px;
+        }
+        
+    .subtitle_services{
+            font-size: 1rem;
+            color: var(--primary-color);
+            max-width: 350px;
+            margin-top: -120px;
+        }
+        
      .container{
          width: 100%;
      }
      .subtitle{
          font-size: 1rem;
      }
-     .description__about__content-desc{
-         font-size: 0.57rem;
-         display: flex;
-         margin-bottom: -20px;
-     }
+     .about__content-desc{
+        font-size: 0.9rem;
+        font-weight: normal;
+        margin-inline: 10px;
+        max-width: 320px; /* You can adjust this value to fit your needs */
+    }
      .choose_us-title {
          margin-top: 30px;
          color: #000000;
          font-weight: 500;
          font-size: 1rem;
-         font-weight: bolder;
+         font-weight: bolder;  
      }
+     
      p{
          font-size: 1rem;
          
@@ -188,11 +207,6 @@
          font-size: 0.57rem;
      }
      
-     .about__img {
-        height: 510px;
-     }
-     
-    
      
      .choose__us-icon{
          margin-top: 25px;
