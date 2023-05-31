@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
 import aboutImg from '../../images/marketing channels.png'
+import projectImg from '../../images/Projects/project_10.png'
 
 const Project_11 = () => {
   return (
@@ -11,6 +12,8 @@ const Project_11 = () => {
 
         <div className='about__wrapper'>
             <div>
+                <div className='about__img'><img src = {projectImg}></img></div>                
+
                 <h5 className='subtitle_services'> Developing a Predictive Model to Measure the Impact of Marketing Channels on attracting new visitors to website</h5>
                 <br></br>
                 
@@ -76,9 +79,9 @@ const Project_11 = () => {
 
                 
             </div>
-            <div className='about__img'>
+            {/* <div className='about__img'>
                 <img src={aboutImg} alt="" />
-            </div>
+            </div> */}
         </div>
     </div>
 </section>

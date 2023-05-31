@@ -7,7 +7,7 @@ import projectImg from '../../images/Projects/project_2.png'
 const Project_1 = () => {
   return (
     <section >
-    <div className='container'>
+    <div className = 'container'>
     <div><BackButton /></div>     
         <div className='about__wrapper'>
             <div>
@@ -93,9 +93,11 @@ const Project_1 = () => {
                 </h2>
                 
             </div>
+
             {/* <div className='about__img'>
                 <img src={aboutImg} alt="" />
             </div> */}
+            
         </div>
     </div>
 </section>

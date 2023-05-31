@@ -2,15 +2,17 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../UI/Scrolling/Back'
 import aboutImg from '../../images/hexact.png'
+import projectImg from '../../images/Projects/project_3.png'
 
 const Hexact = () => {
   return (
     <section >
     <div className='container'>
-    <BackButton />     
+    <div><BackButton /></div>     
 
         <div className='about__wrapper'>
-            <div className='about__content'>
+            <div>
+            <div className='about__img'><img src = {projectImg}></img></div>                
                 <h5 className='subtitle_services'>Unlocking the Power of Product Usage Data with Marketing and Product Analytics</h5>
                 <br></br>
                 
@@ -86,11 +88,10 @@ const Hexact = () => {
                 Our analysis of Hexact's product usage data provided valuable insights that were used to drive positive results for the company.              
                 </p>
                 </h2>
-                
             </div>
-            <div className='about__img'>
+            {/* <div className='about__img'>
                 <img src={aboutImg} alt="" />
-            </div>
+            </div> */}
         </div>
     </div>
 </section>

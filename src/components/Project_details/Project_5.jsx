@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
 import aboutImg from '../../images/conjoint 2.png'
+import projectImg from '../../images/Projects/project_4.png'
 
 const Project_5 = () => {
   return (
@@ -11,6 +12,7 @@ const Project_5 = () => {
 
         <div className='about__wrapper'>
             <div >
+            <div className='about__img'><img src = {projectImg}></img></div>                
                 <h5 className='subtitle_services'>Development of a Comprehensive Conjoint Analysis Tool</h5>
                 <br></br>
                 
@@ -31,19 +33,19 @@ const Project_5 = () => {
                 <p className='description about__content-desc'>
                 <ul>
                     <li>Choice-based Conjoint Study Design and Analysis:</li>
-                    <p>The tool automates the process of designing and analyzing choice-based conjoint studies, making it more efficient and user-friendly. The results are generated in real-time, providing clients with a detailed understanding of the trade-offs between different product attributes.</p>
+                    <p className='description about__content-desc'>The tool automates the process of designing and analyzing choice-based conjoint studies, making it more efficient and user-friendly. The results are generated in real-time, providing clients with a detailed understanding of the trade-offs between different product attributes.</p>
                     <br></br> 
                     <li>Integration of Revealed and Stated Preference Models:</li>
-                    <p>The tool integrates both revealed and stated preference models, providing a more comprehensive understanding of consumer preferences. This helps in price optimization, which is crucial in the market research and product development process.</p>
+                    <p className='description about__content-desc'>The tool integrates both revealed and stated preference models, providing a more comprehensive understanding of consumer preferences. This helps in price optimization, which is crucial in the market research and product development process.</p>
                     <br></br> 
                     <li>Machine Learning Models for Estimation of Revealed Preferences:</li>
-                    <p>The tool utilizes machine learning models for the estimation of revealed preferences based on CRM data. This helps in making more accurate predictions about consumer preferences, which can be used for price optimization and product development.</p>
+                    <p className='description about__content-desc'>The tool utilizes machine learning models for the estimation of revealed preferences based on CRM data. This helps in making more accurate predictions about consumer preferences, which can be used for price optimization and product development.</p>
                     <br></br> 
                     <li>Price Optimization Algorithms:</li>
-                    <p>The tool includes price optimization algorithms, which use a combination of stated and revealed preferences to provide clients with the optimal price for their products. This helps in maximizing profits and reducing costs.</p>
+                    <p className='description about__content-desc'>The tool includes price optimization algorithms, which use a combination of stated and revealed preferences to provide clients with the optimal price for their products. This helps in maximizing profits and reducing costs.</p>
                     <br></br> 
                     <li>API Integration:</li>
-                    <p>The tool is integrated with the existing services and front-end of BehaviouralStrategy LLC, providing a seamless user experience. This also enables easy access to data and results, reducing the time and effort required to analyze and interpret data.</p>
+                    <p className='description about__content-desc'>The tool is integrated with the existing services and front-end of BehaviouralStrategy LLC, providing a seamless user experience. This also enables easy access to data and results, reducing the time and effort required to analyze and interpret data.</p>
 
                 </ul> 
                 </p>
@@ -72,9 +74,9 @@ const Project_5 = () => {
 
                 
             </div>
-            <div className='about__img'>
+            {/* <div className='about__img'>
                 <img src={aboutImg} alt="" />
-            </div>
+            </div> */}
         </div>
     </div>
 </section>

@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
 import aboutImg from '../../images/rapid_covid.png'
+import projectImg from '../../images/Projects/project_5.png'
 
 const Project_6 = () => {
   return (
@@ -11,6 +12,7 @@ const Project_6 = () => {
 
         <div className='about__wrapper'>
             <div >
+                <div className='about__img'><img src = {projectImg}></img></div>                
                 <h5 className='subtitle_services'>Rapid Nationwide Community Assessment on the Socio-Economic Impact of COVID-19 outbreak</h5>
                 <br></br>
                 
@@ -21,13 +23,13 @@ const Project_6 = () => {
                 The survey was carried out between May and September 2020 and involved several key tasks, including:
                 </p>
                 <ul >
-                    <li className='lists'>Adaptation of the UN WOMEN questionnaire to fit the Armenian context, based on a pilot study.</li> 
-                    <li className='lists'>Development of a sampling methodology and sample.</li> 
-                    <li className='lists'>Deployment of the questionnaire on the Kobotoolbox platform.</li> 
-                    <li className='lists'>Online training for 40 interviewers on the usage of Kobotoolbox and data collection in general.</li> 
-                    <li className='lists'>Quality check of the collected data.</li> 
-                    <li className='lists'>Analysis of the results and report generation.</li> 
-                    <li className='lists'>Development of an interactive online tool/dashboard for data analysis and visualization of future surveys. </li>
+                    <li  className='description about__content-desc'>Adaptation of the UN WOMEN questionnaire to fit the Armenian context, based on a pilot study.</li> 
+                    <li  className='description about__content-desc'>Development of a sampling methodology and sample.</li> 
+                    <li  className='description about__content-desc'>Deployment of the questionnaire on the Kobotoolbox platform.</li> 
+                    <li  className='description about__content-desc'>Online training for 40 interviewers on the usage of Kobotoolbox and data collection in general.</li> 
+                    <li  className='description about__content-desc'>Quality check of the collected data.</li> 
+                    <li  className='description about__content-desc'>Analysis of the results and report generation.</li> 
+                    <li  className='description about__content-desc'>Development of an interactive online tool/dashboard for data analysis and visualization of future surveys. </li>
                 </ul>
                 </h2>
                 <br></br> <br></br>
@@ -37,10 +39,10 @@ const Project_6 = () => {
                 The online tool/dashboard was designed with several key features to facilitate data analysis and visualization, including:
                 </p> 
                 <ul >
-                    <li className='lists'>Connection to Kobotoolbox either via API or direct input of data extracted from the platform.</li> 
-                    <li className='lists'>Basic data cleaning capabilities.</li> 
-                    <li className='lists'>User interface based on user inputs.</li> 
-                    <li className='lists'>Ability to generate PDF reports with given user specifications.</li> 
+                    <li  className='description about__content-desc'>Connection to Kobotoolbox either via API or direct input of data extracted from the platform.</li> 
+                    <li  className='description about__content-desc'>Basic data cleaning capabilities.</li> 
+                    <li  className='description about__content-desc'>User interface based on user inputs.</li> 
+                    <li  className='description about__content-desc'>Ability to generate PDF reports with given user specifications.</li> 
                 </ul>
                 </h2>
                 <br></br> <br></br>
@@ -57,9 +59,9 @@ const Project_6 = () => {
 
                 
             </div>
-            <div className='about__img'>
+            {/* <div className='about__img'>
                 <img src={aboutImg} alt="" />
-            </div>
+            </div> */}
         </div>
     </div>
 </section>

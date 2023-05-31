@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
 import aboutImg from '../../images/telcom_churn.png'
+import projectImg from '../../images/Projects/project_11.png'
 
 const Project_12 = () => {
   return (
@@ -11,6 +12,7 @@ const Project_12 = () => {
 
         <div className='about__wrapper'>
             <div >
+                 <div className='about__img'><img src = {projectImg}></img></div>                
                 <h5 className='subtitle_services'>  Development of a Churn Prediction Model Using Machine Learning</h5>
 
                 <br></br>
@@ -25,7 +27,7 @@ const Project_12 = () => {
                 <h2 className='subheader'>Tasks: 
                 <p className='description about__content-desc'>
                 <ul>
-                    <li>Conduct descriptive analysis of customer behavior and churn.</li>
+                    <li >Conduct descriptive analysis of customer behavior and churn.</li>
                     <li>Apply machine learning models to predict the probability of customer churn.</li>
                     <li>Train, test, and validate the models.</li>
                     <li>Provide a ready-to-go model to the customer.</li>
@@ -63,9 +65,9 @@ const Project_12 = () => {
 
                 
             </div>
-            <div className='about__img'>
+            {/* <div className='about__img'>
                 <img src={aboutImg} alt="" /> 
-            </div>
+            </div> */}
         </div>
     </div>
 </section>

@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
 import aboutImg from '../../images/repeated purchase.png'
+import projectImg from '../../images/Projects/project_12.png'
 
 const Project_13 = () => {
   return (
@@ -11,8 +12,9 @@ const Project_13 = () => {
 
         <div className='about__wrapper'>
             <div >
-                <h5 className='subtitle_services'>Predicting Repeated Purchases Using</h5>
-                <h5 className='subtitle_services'>Demographic Data </h5>
+                <div className='about__img'><img src = {projectImg}></img></div>                
+
+                <h5 className='subtitle_services'>Predicting Repeated Purchases Using Demographic Data </h5>
 
                 <br></br>
                 
@@ -71,9 +73,9 @@ const Project_13 = () => {
 
                 
             </div>
-            <div className='about__img'>
+            {/* <div className='about__img'>
                 <img src={aboutImg} alt="" />
-            </div>
+            </div> */}
         </div>
     </div>
 </section>

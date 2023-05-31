@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
 import aboutImg from '../../images/study.png'
+import projectImg from '../../images/Projects/project_7.png'
 
 const Project_8 = () => {
   return (
@@ -11,6 +12,8 @@ const Project_8 = () => {
 
         <div className='about__wrapper'>
             <div >
+                <div className='about__img'><img src = {projectImg}></img></div>                
+
                 <h5 className='subtitle_services'>Dashboard for Subject Contests</h5>
                 <br></br>
                 
@@ -28,14 +31,14 @@ const Project_8 = () => {
                 The project was started in May 2020 and was completed in September 2020. The following tasks were accomplished to deliver the solution:
                 </p>  
                 <ul >
-                    <li className='lists'>R Script for Data Cleaning: </li> 
-                    <p className='lists'>The first step was to create an R script for data cleaning and preparation. This step was crucial in ensuring that the data was accurate and usable for further analysis.</p> 
-                    <li className='lists'>Development of Wireframe:</li> 
-                    <p className='lists'> The wireframe was developed in collaboration with the client to ensure that the final product met their requirements. The wireframe was updated based on user feedback to make the final product as user-friendly as possible.</p>
-                    <li className='lists'>Development of R Shiny Dashboard:</li> 
-                    <p className='lists'> The R shiny dashboard was developed to provide an interactive solution for data visualization. The dashboard was equipped with built-in data cleaning and preparation capabilities to make the analysis process smoother.</p>        
-                    <li className='lists'>Interactive Hypotheses Testing Platform:</li> 
-                    <p className='lists'>The dashboard also included an interactive hypotheses testing platform that allowed for the comparison of different populations based on different variables such as sex, residence, etc.</p>
+                    <li className='description about__content-desc'>R Script for Data Cleaning: </li> 
+                    <p className='description about__content-desc'>The first step was to create an R script for data cleaning and preparation. This step was crucial in ensuring that the data was accurate and usable for further analysis.</p> 
+                    <li className='description about__content-desc'>Development of Wireframe:</li> 
+                    <p className='description about__content-desc'> The wireframe was developed in collaboration with the client to ensure that the final product met their requirements. The wireframe was updated based on user feedback to make the final product as user-friendly as possible.</p>
+                    <li className='description about__content-desc'>Development of R Shiny Dashboard:</li> 
+                    <p className='description about__content-desc'> The R shiny dashboard was developed to provide an interactive solution for data visualization. The dashboard was equipped with built-in data cleaning and preparation capabilities to make the analysis process smoother.</p>        
+                    <li className='description about__content-desc'>Interactive Hypotheses Testing Platform:</li> 
+                    <p className='description about__content-desc'>The dashboard also included an interactive hypotheses testing platform that allowed for the comparison of different populations based on different variables such as sex, residence, etc.</p>
                 </ul>
                 </h2>
                 <br></br> <br></br>
@@ -58,9 +61,9 @@ const Project_8 = () => {
                 </h2>    
 
             </div>
-            <div className='about__img'>
+            {/* <div className='about__img'>
                 <img src={aboutImg} alt="" />
-            </div>
+            </div> */}
         </div>
     </div>
 </section>

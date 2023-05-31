@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
 import aboutImg from '../../images/conjoint.png'
+import projectImg from '../../images/Projects/project_13.png'
 
 const Project_14 = () => {
   return (
@@ -11,6 +12,8 @@ const Project_14 = () => {
 
         <div className='about__wrapper'>
             <div >
+                <div className='about__img'><img src = {projectImg}></img></div>                
+
                 <h5 className='subtitle_services'> Developing a Fully Automated Conjoint Analysis Tool</h5>
                 <br></br>
                 
@@ -73,9 +76,9 @@ const Project_14 = () => {
                
                 
             </div>
-            <div className='about__img'>
+            {/* <div className='about__img'>
                 <img src={aboutImg} alt="" />
-            </div>
+            </div> */}
         </div>
     </div>
 </section>

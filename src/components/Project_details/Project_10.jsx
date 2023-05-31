@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
 import aboutImg from '../../images/bootcamp.png'
+import projectImg from '../../images/Projects/project_9.png'
 
 const Project_10 = () => {
   return (
@@ -11,6 +12,8 @@ const Project_10 = () => {
 
         <div className='about__wrapper'>
             <div >
+                 <div className='about__img'><img src = {projectImg}></img></div>                
+
                 <h5 className='subtitle_services'> Microsoft Innovation Center Data Science Bootcamp </h5>
                 <br></br>
                 
@@ -37,10 +40,10 @@ const Project_10 = () => {
                 <p className='description about__content-desc'>
                 Using the SLOs, we developed a comprehensive curriculum that covered the following topics:</p> 
                 <ul>
-                    <li className='lists'>Introduction to R programming for Data Science.</li>
-                    <li className='lists'>Introduction to Python for Data Science.</li>
-                    <li className='lists'>Supervised and Unsupervised Machine Learning with Python/R. </li>
-                    <li className='lists'>Data Visualization with R and Python.</li>
+                    <li className='description about__content-desc'>Introduction to R programming for Data Science.</li>
+                    <li className='description about__content-desc'>Introduction to Python for Data Science.</li>
+                    <li className='description about__content-desc'>Supervised and Unsupervised Machine Learning with Python/R. </li>
+                    <li className='description about__content-desc'>Data Visualization with R and Python.</li>
 
                 </ul>
                 
@@ -89,9 +92,9 @@ const Project_10 = () => {
                 </h2>
                 
             </div>
-            <div className='about__img'>
+            {/* <div className='about__img'>
                 <img src={aboutImg} alt="" /> 
-            </div>
+            </div> */}
         </div>
     </div>
 </section>

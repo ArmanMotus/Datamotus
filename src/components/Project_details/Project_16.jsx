@@ -2,6 +2,7 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
 import aboutImg from '../../images/customer_satisfaction_for_telecom.png'
+import projectImg from '../../images/Projects/project_15.png'
 
 const Project_16 = () => {
   return (
@@ -11,6 +12,7 @@ const Project_16 = () => {
 
         <div className='about__wrapper'>
             <div >
+                 <div className='about__img'><img src = {projectImg}></img></div>                
                 <h5 className='subtitle_services'>Customer Satisfaction Study for a Major Telecom Company in South-East Asia </h5>
                 <br></br>
                 
@@ -57,9 +59,9 @@ const Project_16 = () => {
 
                 
             </div>
-            <div className='about__img'>
+            {/* <div className='about__img'>
                 <img src={aboutImg} alt="" />
-            </div>
+            </div> */}
         </div>
     </div>
 </section>
