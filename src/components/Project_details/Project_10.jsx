@@ -2,7 +2,7 @@ import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from '../../components/UI/Scrolling/Back'
 import aboutImg from '../../images/bootcamp.png'
-import projectImg from '../../images/Projects/project_9.png'
+import projectImg from '../../images/Projects/project_10.png'
 
 const Project_10 = () => {
   return (
