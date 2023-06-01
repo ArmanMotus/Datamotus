@@ -1,8 +1,6 @@
 import React, {useState,useEffect} from 'react';
 import Slider from 'react-slick';
 import {Link, useNavigate} from "react-router-dom";
-import '../../styles/hero.css'
-
 
 import "../../styles/hero.css"
 import '../../styles/counter.css'
@@ -10,7 +8,6 @@ import '../../styles/projects.css'
 import '../../styles/about.css'
 import '../../styles/team.css'
 import '../../styles/testimonial.css';
-
 
 import heroDarkImg from '../../images/hero-img.png'
 import aboutImg from '../../images/about1.jpeg'
@@ -262,9 +259,11 @@ history(link1)
                 projectData.map((item,index)=>(
                     <div className="projects__item" key={index} onClick={(e) => handleSomething(item.link)}>
                     <span className="projects__icon">
-                    <i class={item.icon}></i> 
+                        <i class={item.icon}></i> 
                     </span>
-                    <h3 className="project__title">{item.title}</h3>
+                    <div className="project__title">
+                        <h3>{item.title}</h3>
+                    </div>
                     <p className="description">{item.desc}</p>
                 </div>
                 ))
@@ -277,7 +276,9 @@ history(link1)
                     <span className="projects__icon">
                     <i class={item.icon}></i> 
                     </span>
-                    <h3 className="project__title">{item.title}</h3>
+                    <div className="project__title">
+                    <h3>{item.title}</h3>
+                    </div>
                     <p className="description">{item.desc}</p>
                 </div>
                 ))

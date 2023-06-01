@@ -3,41 +3,41 @@
     margin-top: 100px;
 }
 
-.project__item-wrapper{
+.project__item-wrapper, .project__item-wrapper2{
     margin-top: 20px;
     display: flex;
-    justify-content:space-around;
-    column-gap: 2rem;
-}
-
-.project__item-wrapper2{
-    margin-top: 20px;
-    display: flex;
-    justify-content:space-around;
-    column-gap: 2rem;
+    justify-content: space-around;
+    flex-wrap: wrap; /* to allow items to wrap to the next line if there is not enough space */
+    gap: 2rem;
 }
 
 .projects__item{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centers children along the cross axis */
+    justify-content: center; /* centers children along the main axis */
     background: var(--card-bg);
-    width: 22%;
+    width: 45%; /* to ensure 2 items per row */
     padding: 35px;
     text-align: center;
     border-radius: 0.5rem;
     cursor: pointer;
+    box-sizing: border-box; /* ensure padding does not increase width */
 }
 
 .projects__icon{
-    padding: 15px;
-    width: 50px;
-    height: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: auto;
+    padding: 15px;
+    width: 50px;
+    height: 50px;
+    margin-bottom: 30px;
+    border: 1px solid var(--primary-color);
     background: var(--icon-bg);
     border-radius: 5px;
-    margin-bottom: 30px;
-    border: 1px solid var(--primary-color)
+    height: 50px; /* your preferred fixed height */
+
 }
 
 .light-theme .service__icon {
@@ -54,9 +54,17 @@
 }
 
 .project__title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     color: var(--primary-color);
-    font-size: 1rem;
+    font-size: 0.85rem;
     margin-bottom: 10px;
+    width: 100%; /* take the full width */
+    text-align: center; /* center the text */
+    word-wrap: break-word; /* allow long words to be able to be broken and wrap onto the next line */
+    height: 60px; /* Adjust this value */
+    overflow: hidden;
 }
 
 .light-theme .projects__item{
@@ -70,6 +78,9 @@
     }
     .subtitle{
         font-size: 1rem;
+    }
+    .projects__item{
+        width: 45%; /* allows for 2 items per row on smaller screens */
     }
     .description__about__content-desc{
         font-size: 0.57rem;
@@ -118,6 +129,24 @@
         color: #050101;
         font-size: 0.57rem;
         width: 250%;
+    }
+    .project__title {
+        /* Set a fixed font-size */
+        font-size: 1rem;
+
+        /* Limit the text to three lines */
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 5; /* limit to 3 lines */
+        -webkit-box-orient: vertical;
+        
+        /* This will make the text break and wrap into a new line */
+        word-wrap: break-word;
+        word-break: break-word;
+    }
+    .project__item-wrapper{
+        flex-direction: row;
+        align-items: center;
     }
     
 }
