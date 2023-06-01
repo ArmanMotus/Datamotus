@@ -27,7 +27,7 @@
     margin-top: 20px;
 }
 
-.choose__us-item{
+.choose__us-item_1{
     padding: 20px 20px 20px 0px;
     display: flex;
     align-items: center;
@@ -51,13 +51,13 @@
     font-size: 3rem;
 }
 
-.choose_us-title {
+.choose_us-title_1 {
     color: #000000;
     font-weight: 500;
     font-size: 1.5rem;
 }
 
-.description__about{
+.description__about_1{
     margin-top: 10px;
     color: #050101
 }
@@ -91,7 +91,7 @@
     .description__about__content-desc{
         font-size: 0.8rem;
     }
-    .choose_us-title {
+    .choose_us-title_1 {
         color: #000000;
         font-weight: 500;
         font-size: 0.8rem;
@@ -114,13 +114,17 @@
     .subtitle{
         font-size: 1rem;
     }
+    
+    
+
     .description__about__content-desc{
         font-size: 0.57rem;
         display: flex;
         margin-bottom: -20px;
     }
-    .choose_us-title {
-        margin-top: 30px;
+    
+    .choose_us-title_1 {
+        margin-top: 20px;
         color: #000000;
         font-weight: 500;
         font-size: 1rem;
@@ -149,19 +153,22 @@
         margin-top: 25px;
     }
     
-    .choose_us-title {
+    .choose_us-title_1 {
         color: #000000;
         font-weight: 500;
         font-size: 0.8rem;
         width: 300%;
     }
     
-    .description__about{
+    .description__about_1{
         margin-top: 10px;
         color: #050101;
         font-size: 0.57rem;
-        width: 250%;
+        width: 100%;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
     }
+    
     
 }
 
@@ -178,7 +185,7 @@
         display: flex;
         margin-bottom: -20px;
     }
-    .choose_us-title {
+    .choose_us-title_1 {
         margin-top: 30px;
         color: #000000;
         font-weight: 500;
@@ -209,14 +216,14 @@
         margin-top: 25px;
     }
     
-    .choose_us-title {
+    .choose_us-title_1 {
         color: #000000;
         font-weight: 500;
         font-size: 0.8rem;
         width: 300%;
     }
     
-    .description__about{
+    .description__about_1{
         margin-top: 10px;
         color: #050101;
         font-size: 0.57rem;

@@ -163,9 +163,9 @@
     }
         
     .about__img img{
-            width: 310px;
+            width: 380px;
             height: 200px;
-            margin-left: 20px;
+            margin-left: 0px;
             object-fit:fill;
             border-radius: 1.5rem;
             margin-top: 15px;

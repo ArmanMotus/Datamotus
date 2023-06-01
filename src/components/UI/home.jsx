@@ -320,13 +320,13 @@ history(link1)
                     
                     <div className='choose__item-wrapper'>
                         {chooseData.map((item,index)=>(
-                            <div className="choose__us-item">
+                            <div className="choose__us-item_1">
                                 <span className="choose__us-icon">
                                     <i class={item.icon}></i>
                                 </span>
-                                <div>
-                                    <h4 className="choose_us-title">{item.title}</h4>
-                                    <p className="description__about">
+                                <div className="choose_us-title_1">
+                                    <h4 >{item.title}</h4>
+                                    <p className="description__about_1">
                                         {item.desc}
                                     </p>
                                     <div className='about_learn_button'>
