@@ -177,7 +177,16 @@
             border-radius: 1.5rem;
             margin-top: 15px;
         }
-        
+
+    .about__img_1{
+            width: 330px;
+            height: 200px;
+            margin-left: 0px;
+            object-fit:fill;
+            border-radius: 1.5rem;
+            margin-top: 250px;
+    } 
+
     .subtitle_services{
             font-size: 1rem;
             color: var(--primary-color);
@@ -192,7 +201,7 @@
      .subtitle{
          font-size: 1rem;
      }
-     
+
      .about__content-desc_train{
         font-size: 0.9rem;
         font-weight: normal;
@@ -246,6 +255,11 @@
          font-size: 0.57rem;
          width: 250%;
      }
+
+     .subheaderTrain{
+        margin-top: 150px;
+        font-size: 1rem;    
+    }
      
  }
      

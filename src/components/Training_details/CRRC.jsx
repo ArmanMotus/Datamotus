@@ -21,7 +21,7 @@ const CRRC = () => {
                 <br></br> <br></br>
                 
             
-            <div className='about__img'>
+            <div className='about__img_1'>
                 {/* <img src={aboutImg} alt="" /> */}
         </div>
     </div>
