@@ -137,7 +137,7 @@
         /* Limit the text to three lines */
         overflow: hidden;
         display: -webkit-box;
-        -webkit-line-clamp: 5; /* limit to 3 lines */
+        -webkit-line-clamp: 6; /* limit to 3 lines */
         -webkit-box-orient: vertical;
         
         /* This will make the text break and wrap into a new line */
