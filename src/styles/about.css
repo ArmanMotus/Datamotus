@@ -54,7 +54,12 @@
 .choose_us-title_1 {
     color: #000000;
     font-weight: 500;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.choose_us-title_1 p {
+    font-weight: 400;
+
 }
 
 .description__about_1{
