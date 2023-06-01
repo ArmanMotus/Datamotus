@@ -30,12 +30,12 @@ const Trainings = () => {
            <div className='about__wrapper'>
               <div className='about_content'>
                 <h5 className='subtitle_train'> Our Trainings </h5>
-        <p className='description about__content-desc'>
+        <p className='description about__content-desc_train'>
         Welcome to Datamotus, your one-stop destination for data science and machine learning training solutions. 
         Our corporate training programs are designed to equip your staff with the latest skills in data analytics using the R programming language. 
         Our experienced trainers have conducted numerous successful training sessions for various organizations, including Byblos Bank, CRRC Armenia, and the Council of Europe.'
         </p>
-        <p className='description about__content-desc'>
+        <p className='description about__content-desc_train'>
         Our comprehensive training modules cover all aspects of data analysis, from data structures, visualization, and manipulation to statistical analysis and machine learning. 
         Our focus on reproducible research ensures that your staff can create quality research outputs. 
         Contact us today to learn more about our customized training solutions for your organization.
