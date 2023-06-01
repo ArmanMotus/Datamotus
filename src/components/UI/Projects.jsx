@@ -21,9 +21,9 @@ const projectData =[
 
 
     {
-        icon:'ri-community-line',
-        title: 'Developing a Real-Time Visualization Tool for Survey Monitoring using R shiny',
-        link:'Project_4',
+        icon:'ri-windows-fill',
+        title: 'Microsoft Innovation Center Data Science Bootcamp ',
+        link: 'Project_4',
         desc: ''
     },
 
@@ -71,11 +71,10 @@ const projectData2 = [
 
 const projectData3 = [
     
-
     {
-        icon:'ri-windows-fill',
-        title: 'Microsoft Innovation Center Data Science Bootcamp ',
-        link: 'Project_10',
+        icon:'ri-community-line',
+        title: 'Developing a Real-Time Visualization Tool for Survey Monitoring using R shiny',
+        link:'Project_10',
         desc: ''
     },
 
@@ -150,7 +149,7 @@ const Projects = () => {
                     <span className="projects__icon">
                     <i class={item.icon}></i> 
                     </span>
-                    <h3 className="project__title">{item.title}</h3>
+                    <div className="project__title">{item.title}</div>
                     <p className="description">{item.desc}</p>
                 </div>
                 ))
@@ -166,7 +165,7 @@ const Projects = () => {
                     <span className="projects__icon">
                     <i class={item.icon}></i> 
                     </span>
-                    <h3 className="project__title">{item.title}</h3>
+                    <div className="project__title">{item.title}</div>
                     <p className="description">{item.desc}</p>
                 </div>
                 ))
@@ -180,7 +179,7 @@ const Projects = () => {
                     <span className="projects__icon">
                     <i class={item.icon}></i> 
                     </span>
-                    <h3 className="project__title">{item.title}</h3>
+                    <div className="project__title">{item.title}</div>
                     <p className="description">{item.desc}</p>
                 </div>
                 ))
@@ -194,7 +193,7 @@ const Projects = () => {
                     <span className="projects__icon">
                     <i class={item.icon}></i> 
                     </span>
-                    <h3 className="project__title">{item.title}</h3>
+                    <div className="project__title">{item.title}</div>
                     <p className="description">{item.desc}</p>
                 </div>
                 ))

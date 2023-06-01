@@ -262,7 +262,7 @@ history(link1)
                         <i class={item.icon}></i> 
                     </span>
                     <div className="project__title">
-                        <h3>{item.title}</h3>
+                        {item.title}
                     </div>
                     <p className="description">{item.desc}</p>
                 </div>
@@ -276,9 +276,7 @@ history(link1)
                     <span className="projects__icon">
                     <i class={item.icon}></i> 
                     </span>
-                    <div className="project__title">
-                    <h3>{item.title}</h3>
-                    </div>
+                    <div className="project__title">{item.title}</div>
                     <p className="description">{item.desc}</p>
                 </div>
                 ))

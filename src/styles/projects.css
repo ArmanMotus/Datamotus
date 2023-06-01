@@ -6,23 +6,24 @@
 .project__item-wrapper, .project__item-wrapper2{
     margin-top: 20px;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; /* to allow items to wrap to the next line if there is not enough space */
+    justify-content: space-between;
+    flex-wrap: wrap; /* allows items to wrap onto the next line if there isn't enough space */
     gap: 2rem;
+    
+    
 }
 
 .projects__item{
     display: flex;
     flex-direction: column;
-    align-items: center; /* centers children along the cross axis */
-    justify-content: center; /* centers children along the main axis */
+    align-items: center; /* Centers children along the cross-axis (horizontal axis in this case) */
+    justify-content: center; /* Centers children along the main axis (vertical axis in this case) */
     background: var(--card-bg);
-    width: 45%; /* to ensure 2 items per row */
+    flex: 0 1 calc(50% - 2rem); /* Each item will take half the width, minus the gap */
     padding: 35px;
     text-align: center;
     border-radius: 0.5rem;
     cursor: pointer;
-    box-sizing: border-box; /* ensure padding does not increase width */
 }
 
 .projects__icon{
@@ -36,8 +37,6 @@
     border: 1px solid var(--primary-color);
     background: var(--icon-bg);
     border-radius: 5px;
-    height: 50px; /* your preferred fixed height */
-
 }
 
 .light-theme .service__icon {
@@ -54,17 +53,14 @@
 }
 
 .project__title{
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    text-align: center;
     color: var(--primary-color);
     font-size: 0.85rem;
+    font-weight: bold; /* This makes the font bold */
     margin-bottom: 10px;
-    width: 100%; /* take the full width */
-    text-align: center; /* center the text */
-    word-wrap: break-word; /* allow long words to be able to be broken and wrap onto the next line */
-    height: 60px; /* Adjust this value */
-    overflow: hidden;
+    width: 90%;
+    word-break: normal; /* Default value, break at the end of the line after a word */
+
 }
 
 .light-theme .projects__item{
@@ -80,7 +76,7 @@
         font-size: 1rem;
     }
     .projects__item{
-        width: 45%; /* allows for 2 items per row on smaller screens */
+        width: 100%;
     }
     .description__about__content-desc{
         font-size: 0.57rem;
@@ -130,22 +126,13 @@
         font-size: 0.57rem;
         width: 250%;
     }
-    .project__title {
-        /* Set a fixed font-size */
-        font-size: 0.8rem;
-
-        /* Limit the text to three lines */
-        overflow: hidden;
-        display: -webkit-box;
-        -webkit-line-clamp: 6; /* limit to 3 lines */
-        -webkit-box-orient: vertical;
-        
-        /* This will make the text break and wrap into a new line */
-        word-wrap: break-word;
-        word-break: break-word;
+    .project__title{
+        font-size: 0.85rem;
+        width: 100%;
     }
-    .project__item-wrapper{
-        flex-direction: row;
+    
+    .project__item-wrapper,  .project__item-wrapper2{
+        flex-direction: column;
         align-items: center;
     }
     
