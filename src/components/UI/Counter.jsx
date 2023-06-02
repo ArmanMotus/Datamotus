@@ -5,11 +5,11 @@ import '../../styles/counter.css'
 
 const counterData =[
     {
-        number: '5K',
+        number: '70',
         text: 'Clients'
     },
     {
-        number: 350,
+        number: 220,
         text: 'Projects Completed'
     },
     {
