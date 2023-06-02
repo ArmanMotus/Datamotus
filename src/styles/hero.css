@@ -215,3 +215,31 @@
     } 
 } */
 
+@media only screen and (orientation: landscape) {
+    /* Styles for landscape (horizontal) orientation go here */
+
+    .hero__content h2 {
+        font-size: 1.8rem;
+        line-height: 2rem;
+    }
+    
+    .hero__content h3 {
+        font-size: 1.2rem;
+    } 
+    
+    .hero__content p {
+        font-size: 1rem;
+    }
+
+    .hero__btns {
+        column-gap: 1.4rem;
+    }
+
+    .hero__img {
+        width: 60%;
+    }
+    
+    .primary__btn, .secondary__btn {
+        padding: 0.4rem 1.2rem;
+    }
+}
