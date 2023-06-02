@@ -227,7 +227,7 @@ history(link1)
             </div>
         </div>
     
-    {/* counter section */}
+    { /* counter section */ }
     <section className='counter'>
          <div className="container">
             <div className="counter__wrapper">
@@ -485,11 +485,11 @@ history(link1)
             </div>
         </div>
     </section>
+</section>
 
  
   
 
-</section>
  
  
  );

@@ -8,7 +8,7 @@ const Services = () => {
     <div className='container'>
     <div className='about__wrapper'>
         <div className='about__content_services'>
-            <h5 className='subtitle_services'> Comprehensive Data Science Solutions to Help Your Business Thrive </h5>
+            <h5 className='subtitle_services_1'> Comprehensive Data Science Solutions to Help Your Business Thrive </h5>
             <br></br>
             
             <h2 className='subheader'> 
@@ -28,8 +28,8 @@ const Services = () => {
                 </h2>
                 <br></br> <br></br>
             
-            <h2 className='subheader'>
-            <p className='description about__content-desc'>
+            <h2 className='description about__content-desc'>
+            <p >
             At Datamotus, we provide comprehensive data science solutions that can help businesses unlock the full potential of their data. 
             Whether you need machine learning, statistical analysis, marketing research, data visualization, dashboarding, 
             or corporate training services, we have the expertise and experience to deliver results. Contact us today to learn more about our services and how we can help your business thrive.

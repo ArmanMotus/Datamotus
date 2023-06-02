@@ -194,6 +194,11 @@
             margin-top: -120px;
         }
         
+    .subtitle_services_1{
+            font-size: 1rem;
+            max-width: 350px;
+            margin-top: -40px;
+    }    
      .container{
          width: 100%;
      }

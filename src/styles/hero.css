@@ -81,14 +81,18 @@
         height: auto;
     }
     
+    
     .hero__content h3 {
         font-size: 1.3rem;
     } 
     
     .hero__content h2{
-        font-size: 1.8rem;
-        line-height: 30px;
-    }
+    font-size: 0.rem;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    overflow: hidden; /* Prevents text from overflowing */
+    text-overflow: ellipsis; /* Adds an ellipsis when the text overflows */
+}
 
     .hero__btns{
         column-gap: 2rem;
@@ -111,43 +115,68 @@
     .container{
         width: 100%;
         height: auto;
-
     }
     
     .hero__content h3 {
-        font-size: 0.45rem;
+        font-size: 0.7rem; /* Increased the font size */
         margin-top: 20px;
     } 
     
     .hero__content h2{
-        font-size: 0.6rem;
-        line-height: 1;
+        font-size: 0.6rem; /* Increased the font size */
+        line-height: 1.2; /* Adjusted line-height */
         margin-bottom: 20px;
+      
     }
 
      .hero__btns{
-        column-gap: 0.1rem;
+        column-gap: 0.6rem;
         margin-top: -30px;
-        
     }
 
-    
-     .hero__img{
+    .hero__img{
         height: 150px;
-        width: 300px;        
-        margin-top: 80px;
-        margin-left: 50px;
-
+        width: 100%; /* The image will take the full width of its container */       
+        margin-top: 90px;
+        margin-left: 30px;
     }
     
     .primary__btn,
     .secondary__btn{
-        padding: 0.1rem 0.7rem;
-        font-size: 8px;
+        font-size: 0.6rem; /* Increased the font size */
+        font-weight: 700; /* Lighter font weight */
+        white-space: nowrap; /* Keeps text on a single line */
+
     } 
 }
 
-@media only screen and (min-width: 481px) and (max-width: 800px) {
+@media only screen and (max-width:380px){
+    .hero__content h3 {
+        font-size: 0.6rem; /* Decreased the font size */
+        margin-top: 10px; /* Adjusted top margin */
+    } 
+    
+    .hero__content h2{
+        font-size: 0.5rem; /* Decreased the font size */
+        line-height: 1.0; /* Adjusted line-height */
+        margin-bottom: 10px; /* Adjusted bottom margin */
+    }
+
+    .hero__img {
+        height: 120px; /* Adjusted height */
+        margin-top: 80px; /* Adjusted top margin */
+        margin-left: 10px; /* Adjusted left margin */
+    }
+
+    .primary__btn,
+    .secondary__btn {
+        font-size: 0.5rem; /* Decreased the font size */
+        font-weight: 300; /* Lighter font weight */
+        white-space: nowrap; /* Keeps the text on a single line */
+    }
+}
+
+/* @media only screen and (min-width: 481px) and (max-width: 800px) {
 
     .container{
         width: 100%;
@@ -184,5 +213,5 @@
         padding: 0.1rem 0.7rem;
         font-size: 8px;
     } 
-}
+} */
 
