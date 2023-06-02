@@ -218,6 +218,14 @@
 @media only screen and (orientation: landscape) {
     /* Styles for landscape (horizontal) orientation go here */
 
+    .hero__content {
+        width: 70%;
+    }
+    
+    .hero__img {
+        width: 100%; 
+    }
+
     .hero__content h2 {
         font-size: 1.8rem;
         line-height: 2rem;
@@ -235,9 +243,7 @@
         column-gap: 1.4rem;
     }
 
-    .hero__img {
-        width: 60%;
-    }
+    
     
     .primary__btn, .secondary__btn {
         padding: 0.4rem 1.2rem;
