@@ -3,6 +3,9 @@ import React, {useState,useEffect} from 'react';
 import ScrollToTop from './components/UI/Scrolling/Scroll';
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import BackButton from '../src/components/UI/Scrolling/Back';
+import ReactGA from 'react-ga';
+import { useLocation } from 'react-router-dom';
+
 
 import './App.css';
 
@@ -43,16 +46,21 @@ import Digitain from './components/Training_details/Digitain';
 import Ameria from './components/Training_details/Ameria';
 import VIVA from './components/Training_details/VIVA'
 
-function App() {
 
+ReactGA.initialize('G-24SGYL6ND2');
+
+
+function App() {
+  const location = useLocation();
   const [theme, setTheme] = useState('')
 
   const toggleTheme = ()=>{
     theme === '' ? setTheme('light-theme') : setTheme('')
   }
 
-  useEffect(()=>{document.body.className = theme},[theme])
-
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
   return (      
   
     <>   
