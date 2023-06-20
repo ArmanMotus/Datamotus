@@ -5,7 +5,7 @@ const blog = () => {
   return (
     <section>
       
-    <div className='blcontainer'>
+    <div >
     <div >  
     <div >
       <iframe
@@ -17,6 +17,7 @@ const blog = () => {
         aria-hidden="false"
         tabIndex="1"
         style={{overflow: 'hidden'}}
+
       ></iframe>
     </div>
     </div>
