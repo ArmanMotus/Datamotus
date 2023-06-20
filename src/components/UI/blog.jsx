@@ -9,7 +9,7 @@ const blog = () => {
     <div >  
     <div >
       <iframe
-        // src="https://armandata.shinyapps.io/test3/"
+        src="https://master--merry-lily-bf54d6.netlify.app/"
         width="100%"
         height="1000"
         frameBorder="0"
