@@ -325,7 +325,7 @@ history(link1)
                                 </span>
                                 <div className="choose_us-title_1">
                                     <h4 >{item.title}</h4>
-                                    <p className="description__about_1">
+                                    <p >
                                         {item.desc}
                                     </p>
                                     <div className='about_learn_button'>
