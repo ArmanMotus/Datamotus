@@ -40,8 +40,8 @@ const Footer = () => {
 
                 <p className="small__text description">©2023 Datamotus. All rights reserved.</p>
             </div>
-            {/* className="footer__quick-links" */}
-            <div >
+
+            <div className="footer__quick-links">
                 <h3 className="quick__link-title">Contact us</h3>
                 <ul className="quick__links">
                     {

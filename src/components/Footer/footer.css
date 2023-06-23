@@ -1,10 +1,11 @@
 .footer{
-    padding: 100px 0px;
+    width: 100%;
 }
 
 .footer__wrapper{
     display: flex;
     justify-content: space-between;
+    margin-left: 40px;
 }
 
 .footer__logo{
@@ -57,7 +58,7 @@
 @media only screen and (max-width:810px){
     
     .footer{
-        width: 145%;
+        width: 100%;
         
     }
     .footer__quick-links {
