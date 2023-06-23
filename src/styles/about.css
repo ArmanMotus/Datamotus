@@ -169,7 +169,6 @@
         margin-top: 10px;
         color: #050101;
         font-size: 0.57rem;
-        width: 100%;
         overflow-wrap: break-word;
         word-wrap: break-word;
     }
@@ -232,7 +231,6 @@
         margin-top: 10px;
         color: #050101;
         font-size: 0.57rem;
-        width: 250%;
     }
     
 }

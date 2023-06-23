@@ -5,7 +5,7 @@
 .footer__wrapper{
     display: flex;
     justify-content: space-between;
-    margin-left: 40px;
+    padding: 0 20px; /* Add horizontal padding */
 }
 
 .footer__logo{
@@ -62,7 +62,7 @@
         
     }
     .footer__quick-links {
-        width: 50%;
+        width: 30%;
     }
 }
 
