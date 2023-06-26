@@ -8,6 +8,20 @@
     width: 1000px;
 }
 
+.lister{
+    margin-inline: 30px;
+    font-size: 1rem;
+}
+
+.para-height {
+    line-height: 1.8;
+    text-align: justify;
+}
+
+.subtitle_services_1{
+    font-size: 1rem;
+} 
+
 .about__content_services {
     width: 6000px;
 }
@@ -55,19 +69,24 @@
     margin-inline: 25px;
     margin-top: 10px;
     
+    
 }
 .about__content-desc{
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: normal;
     margin-inline: 10px;
+    text-align: justify;
+
     max-width: 900px; /* You can adjust this value to fit your needs */
 }
 
 .about__content-desc_train{
-    font-size: 0.9rem;
+    font-size: 1rem;
     font-weight: normal;
     margin-inline: 100px;
     max-width: 900px; /* You can adjust this value to fit your needs */
+    text-align: justify;
+
 }
 
 .choose__item-wrapper{

@@ -9,10 +9,7 @@
 }
 
 .hero__content{
-    width: 50%;
-}
-
-.hero__content{
+    width: 60%;
     padding-top: 140px;
 }
 
@@ -30,6 +27,7 @@
     margin-top: 20px;
     font-size: 1.1rem;
 }
+
 
 .highlight {
     color: var(--primary-color);
@@ -215,10 +213,10 @@
     } 
 } */
 
-@media only screen and (orientation: landscape) {
+/* @media only screen and (orientation: landscape) {
     /* Styles for landscape (horizontal) orientation go here */
 
-    .hero__content {
+    /* .hero__content {
         width: 70%;
     }
     
@@ -247,5 +245,4 @@
     
     .primary__btn, .secondary__btn {
         padding: 0.4rem 1.2rem;
-    }
-}
+    } */
