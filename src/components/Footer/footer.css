@@ -5,7 +5,6 @@
 .footer__wrapper{
     display: flex;
     justify-content: space-between;
-    padding: 0 20px; /* Add horizontal padding */
     margin-top: 60px;
 }
 
@@ -70,7 +69,6 @@
 @media only screen and (max-width:480px){
     .footer{
         width: 100%;
-        
     }
     .footer__quick-links {
         width: 40%;

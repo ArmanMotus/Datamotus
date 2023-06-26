@@ -26,7 +26,7 @@ const Project_14 = () => {
                 
                 <h2 className='subheader'>Tasks: 
                 <p className='description about__content-desc'>
-                <ul>
+                <ul className = 'lister'>
                     <li>Automating the conjoint design tool using Orthogonal Main Effects Design and Mix-and-Match Design for alternative and choice sets.</li>
                     <li>Automating the analysis of conjoint survey results using Hierarchical Bayesian, Monte Carlo-Markov Chain models.</li>
                     <li>Integration of the solution with the web interface.</li>

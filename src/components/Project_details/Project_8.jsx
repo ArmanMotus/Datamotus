@@ -30,7 +30,7 @@ const Project_8 = () => {
                 <p className='description about__content-desc'>
                 The project was started in May 2020 and was completed in September 2020. The following tasks were accomplished to deliver the solution:
                 </p>  
-                <ul >
+                <ul className = 'lister'>
                     <li className='description about__content-desc'>R Script for Data Cleaning: </li> 
                     <p className='description about__content-desc'>The first step was to create an R script for data cleaning and preparation. This step was crucial in ensuring that the data was accurate and usable for further analysis.</p> 
                     <li className='description about__content-desc'>Development of Wireframe:</li> 

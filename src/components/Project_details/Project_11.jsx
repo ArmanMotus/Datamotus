@@ -27,7 +27,7 @@ const Project_11 = () => {
                 
                 <h2 className='subheader'>Tasks: 
                 <p className='description about__content-desc'>
-                <ul>
+                <ul className = 'lister'>
                     <li>Data collection, cleaning, and preparation for analysis.</li>
                     <li>Development of a Bayesian structural time series model.</li>
                     <li>Measurement of the impact of three distinct marketing channels (TV, Outdoor, Print media)</li>

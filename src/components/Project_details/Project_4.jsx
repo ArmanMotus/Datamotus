@@ -39,7 +39,7 @@ const Project_10 = () => {
                 <h2 className='subheader'>
                 <p className='description about__content-desc'>
                 Using the SLOs, we developed a comprehensive curriculum that covered the following topics:</p> 
-                <ul>
+                <ul className = 'lister'>
                     <li className='description about__content-desc'>Introduction to R programming for Data Science.</li>
                     <li className='description about__content-desc'>Introduction to Python for Data Science.</li>
                     <li className='description about__content-desc'>Supervised and Unsupervised Machine Learning with Python/R. </li>

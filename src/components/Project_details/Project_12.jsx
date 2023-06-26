@@ -26,7 +26,7 @@ const Project_12 = () => {
                 
                 <h2 className='subheader'>Tasks: 
                 <p className='description about__content-desc'>
-                <ul>
+                <ul className = 'lister'>
                     <li >Conduct descriptive analysis of customer behavior and churn.</li>
                     <li>Apply machine learning models to predict the probability of customer churn.</li>
                     <li>Train, test, and validate the models.</li>

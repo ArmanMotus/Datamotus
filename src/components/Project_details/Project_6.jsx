@@ -22,7 +22,7 @@ const Project_6 = () => {
                 The goal of the survey was to understand the socio-economic impact of the pandemic on the community. 
                 The survey was carried out between May and September 2020 and involved several key tasks, including:
                 </p>
-                <ul >
+                <ul className = 'lister'>
                     <li  className='description about__content-desc'>Adaptation of the UN WOMEN questionnaire to fit the Armenian context, based on a pilot study.</li> 
                     <li  className='description about__content-desc'>Development of a sampling methodology and sample.</li> 
                     <li  className='description about__content-desc'>Deployment of the questionnaire on the Kobotoolbox platform.</li> 
@@ -38,7 +38,7 @@ const Project_6 = () => {
                 <p className='description about__content-desc'>
                 The online tool/dashboard was designed with several key features to facilitate data analysis and visualization, including:
                 </p> 
-                <ul >
+                <ul className = 'lister'>
                     <li  className='description about__content-desc'>Connection to Kobotoolbox either via API or direct input of data extracted from the platform.</li> 
                     <li  className='description about__content-desc'>Basic data cleaning capabilities.</li> 
                     <li  className='description about__content-desc'>User interface based on user inputs.</li> 

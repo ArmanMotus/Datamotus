@@ -26,7 +26,7 @@ const Blog = () => {
                 width="100%"
                 height="1000"
                 frameBorder="0"
-                scrolling="no"
+                // scrolling="no"
                 allowFullScreen=""
                 aria-hidden="false"
                 tabIndex="1"

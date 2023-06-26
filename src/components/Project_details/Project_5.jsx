@@ -31,7 +31,7 @@ const Project_5 = () => {
 
                 <h2 className='subheader'>Key Features of the Tool: 
                 <p className='description about__content-desc'>
-                <ul>
+                <ul className = 'lister'>
                     <li>Choice-based Conjoint Study Design and Analysis:</li>
                     <p className='description about__content-desc'>The tool automates the process of designing and analyzing choice-based conjoint studies, making it more efficient and user-friendly. The results are generated in real-time, providing clients with a detailed understanding of the trade-offs between different product attributes.</p>
                     <br></br> 

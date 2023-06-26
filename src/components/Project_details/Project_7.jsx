@@ -35,7 +35,7 @@ const Project_7 = () => {
                 The goal of this project was to help Project Harmony-International in Armenia to better assess the risk of reoffending among probationers. 
                 To achieve this goal, the following tasks were undertaken:
                 </p>  
-                <ul >
+                <ul className = 'lister'>
                     <li className='description about__content-desc'>Development of the Sampling Methodology: </li> 
                     <p className='description about__content-desc'> The first step was to develop a sampling methodology that would allow for a representative sample of probationers 
                     to be selected for the study. This was done to ensure that the results of the study would be generalizable to the larger population of probationers in Armenia.</p>
