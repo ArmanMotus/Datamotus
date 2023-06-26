@@ -8,7 +8,7 @@ const Services = () => {
     <div className='container'>
     <div className='about__wrapper'>
         <div className='about__content_services'>
-            <h5 className='subtitle_services_1'> Comprehensive Data Science Solutions to Help Your Business Thrive </h5>
+        <h5 className='subtitle' style={{ fontSize: '1.8rem' }}> Comprehensive Data Science Solutions to Help Your Business Thrive </h5>
             <br></br>
             
                 <p className='description about__content-desc'>
