@@ -55,8 +55,8 @@
 .project__title{
     text-align: center;
     color: var(--primary-color);
-    font-size: 0.85rem;
-    font-weight: bold; /* This makes the font bold */
+    font-size: 1rem;
+    font-weight:500; /* This makes the font bold */
     margin-bottom: 10px;
     width: 90%;
     word-break: normal; /* Default value, break at the end of the line after a word */

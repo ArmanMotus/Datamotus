@@ -18,10 +18,12 @@
     border-radius: 0.5rem;
 }
 
-.description__about__content-desc{
+.description__about__content-desc {
     display: flex;
-    margin-top: 10px; 
+    margin-top: 10px;
+    text-align: justify;
 }
+
 
 .choose__item-wrapper{
     margin-top: 20px;

@@ -54,9 +54,9 @@ const projectData2 = [
     },
 
     {
-        icon:'ri-book-mark-fill',
-        title: 'Dashboard for Subject Contests',
-        link: 'Project_8',
+        icon:'ri-sim-card-2-line',
+        title: 'Development of a Churn Prediction Model Using Machine Learning',
+        link: 'Project_12',
         desc: ''
     },
 
@@ -86,9 +86,9 @@ const projectData3 = [
     },
 
     {
-        icon:'ri-sim-card-2-line',
-        title: 'Development of a Churn Prediction Model Using Machine Learning',
-        link: 'Project_12',
+        icon:'ri-book-mark-fill',
+        title: 'Dashboard for Subject Contests',
+        link: 'Project_8',
         desc: ''
     },
 

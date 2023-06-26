@@ -6,6 +6,7 @@
     display: flex;
     justify-content: space-between;
     padding: 0 20px; /* Add horizontal padding */
+    margin-top: 60px;
 }
 
 .footer__logo{
