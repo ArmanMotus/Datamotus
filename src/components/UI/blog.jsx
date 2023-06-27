@@ -1,37 +1,55 @@
 import React, { useEffect, useRef } from 'react';
-import '../../styles/blog.css';
 
 const Blog = () => {
-    const iframeRef = useRef(null);
+  const iframeRef = useRef(null);
 
-    useEffect(() => {
-        const handleMessage = (event) => {
-            if (typeof event.data === 'object' && event.data.frameHeight) {
-                iframeRef.current.style.height = `${event.data.frameHeight}px`;
-            }
-        }
+  useEffect(() => {
+    const handleMessage = (event) => {
+      if (event.data && event.data.frameHeight) {
+        iframeRef.current.style.height = `${event.data.frameHeight}px`;
+      }
+      
+      if (event.data && event.data.scrollReactAppToTop) {
+        window.scrollTo(0, 0);
+      }
+    };
 
-        window.addEventListener('message', handleMessage);
-        
-        return () => {
-            window.removeEventListener('message', handleMessage);
-        };
-    }, []);
+    window.addEventListener('message', handleMessage);
 
-    return (
-        <div style={{width: "100%", overflow: 'hidden'}}>
-            <iframe
-                ref={iframeRef}
-                src="https://datamotusblog.netlify.app/"
-                width="100%"
-                height="1000"
-                frameBorder="0"
-                // scrolling="no"
-                allowFullScreen=""
-                aria-hidden="false"
-                tabIndex="1"
-            ></iframe>
-        </div>
-    )
-}
+    return () => {
+      window.removeEventListener('message', handleMessage);
+    };
+  }, []);
+
+  useEffect(() => {
+    const sendHeight = () => {
+      const height = document.body.scrollHeight;
+      window.parent.postMessage({ frameHeight: height }, '*');
+    };
+
+    sendHeight();
+
+    window.addEventListener('resize', sendHeight);
+
+    return () => {
+      window.removeEventListener('resize', sendHeight);
+    };
+  }, []);
+
+  return (
+    <div style={{ width: '100%', overflow: 'hidden' }}>
+      <iframe
+        ref={iframeRef}
+        src="https://datamotusblog.netlify.app/"
+        width="100%"
+        height="1000"
+        frameBorder="0"
+        allowFullScreen=""
+        aria-hidden="false"
+        tabIndex="1"
+      ></iframe>
+    </div>
+  );
+};
+
 export default Blog;
