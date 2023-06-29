@@ -55,6 +55,8 @@ const Header = ({ theme, toggleTheme }) => {
   const handleBlogClick = () => {
     if (window.location.hash === '#/blog') {
       window.location.reload(); // Reload the page if already on the blog
+      window.scrollTo(0, 0); // Scroll to the top (position 0) after reloading
+
     }
   };
 
