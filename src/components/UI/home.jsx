@@ -1,6 +1,7 @@
 import React, {useState,useEffect} from 'react';
 import Slider from 'react-slick';
 import {Link, useNavigate} from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 import "../../styles/hero.css"
 import '../../styles/counter.css'
@@ -185,6 +186,7 @@ const handleServices = (link1) =>{
 history(link1)   
 };
 
+const {loginWithRedirect, logout, user, isLoading} = useAuth0();
 
 
     const settings = {
@@ -216,9 +218,19 @@ history(link1)
                         <Link to="/contact">
                         <button className='primary__btn'>Contact us</button>
                         </Link>
-                        <Link to="/about">
-                        <button className='secondary__btn'>Discover more </button>
-                        </Link>
+                        
+                        {!isLoading && !user && (
+                            <button className='primary__btn' onClick={()=> loginWithRedirect()}>
+                            Login
+                        </button>
+                        )}    
+
+                        {!isLoading && user && (
+                            <button className='primary__btn' onClick={()=> logout()}>
+                            Logout
+                            </button>
+                        )}
+
                     </div>
                 </div>
                 <div className='hero__img'>

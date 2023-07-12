@@ -3,7 +3,6 @@ import logo from '../../../src/logo-cdr.svg';
 import './header.css';
 import '../../styles/login.css'; 
 
-import { useAuth0 } from "@auth0/auth0-react";
 
 const nav__links = [
   {
@@ -37,7 +36,6 @@ const nav__links = [
 ];
 
 const Header = ({ theme, toggleTheme }) => {
-  const {loginWithRedirect, logout, user, isLoading} = useAuth0();
 
   
   const headerRef = useRef(null);
@@ -96,17 +94,7 @@ const Header = ({ theme, toggleTheme }) => {
         </div>
       </div>
 
-      {!isLoading && !user && (
-        <button className="button" onClick={()=> loginWithRedirect()}>
-          Login
-        </button>
-      )}
-
-      {!isLoading && user && (
-        <button className="button" onClick={()=> logout()}>
-          Logout
-        </button>
-      )}
+     
       
     </header>
   );

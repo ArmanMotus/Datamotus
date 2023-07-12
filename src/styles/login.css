@@ -13,7 +13,7 @@
     transition: all 0.3s ease-in-out;
     margin-bottom: -30px;
     border: none; /* This removes the border */
-    float: right; /* Align button to the left */
+    float: left; /* Align button to the left */
     margin-right: 200px; /* Adjust margin for spacing */
     margin-top: 20px; /* Adjust margin for spacing */
 
