@@ -49,6 +49,8 @@ const Services = () => {
     
   )
 }
-export default withAuthenticationRequired(Services, {
-    onRedirecting: () => <div>Loading...</div>,
-});
+export default Services;
+
+// export default withAuthenticationRequired(Services, {
+//     onRedirecting: () => <div>Loading...</div>,
+// });
