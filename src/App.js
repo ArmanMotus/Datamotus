@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import BackButton from '../src/components/UI/Scrolling/Back';
 import ReactGA from 'react-ga';
 import { useLocation } from 'react-router-dom';
+import Auth0ProviderWithHistory from "./auth0Provider";
 
 
 import './App.css';
@@ -64,7 +65,8 @@ function App() {
   return (      
   
     <>   
-       
+        <Auth0ProviderWithHistory>
+
         <ScrollToTop />
 
         <Header theme={theme} toggleTheme={toggleTheme} />
@@ -118,6 +120,7 @@ function App() {
 
         <Footer />
     
+        </Auth0ProviderWithHistory>
 
     </>  
     

@@ -1,6 +1,8 @@
 import React from 'react'
 import '../../styles/projectDet.css';  
 import BackButton from './Scrolling/Back';
+import { withAuthenticationRequired } from "@auth0/auth0-react";
+
 
 const Services = () => {
   return (
@@ -47,4 +49,6 @@ const Services = () => {
     
   )
 }
-export default Services;
+export default withAuthenticationRequired(Services, {
+    onRedirecting: () => <div>Loading...</div>,
+});
