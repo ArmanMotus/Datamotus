@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import BackButton from '../src/components/UI/Scrolling/Back';
 import ReactGA from 'react-ga';
 import { useLocation } from 'react-router-dom';
-import Auth0ProviderWithHistory from "./auth0Provider";
+// import Auth0ProviderWithHistory from "./auth0Provider";
 
 
 import './App.css';
@@ -18,7 +18,16 @@ import About from './components/UI/About';
 import Services from './components/UI/Services';
 import Trainings from './components/UI/Training';
 import Blog from './components/UI/blog';
+import Article_1 from './components/Blog_details/Blog1'
+import Article_2 from './components/Blog_details/Blog2'
+import Article_3 from './components/Blog_details/Blog3'
+import Article_4 from './components/Blog_details/Blog4'
+import Article_5 from './components/Blog_details/Blog5'
+import Article_6 from './components/Blog_details/Blog6'
+
 import Contact from './components/UI/Contact'
+import Casestudies from './components/UI/casestudies';
+import Casestudy_1 from './components/CaseStudies_details/casestudy1';
 import Project_2 from './components/Project_details/Project_2'
 import Project_3 from './components/Project_details/Project_3'
 import Project_4 from './components/Project_details/Project_4'
@@ -65,7 +74,7 @@ function App() {
   return (      
   
     <>   
-        <Auth0ProviderWithHistory>
+        {/* <Auth0ProviderWithHistory> */}
 
         <ScrollToTop />
 
@@ -80,7 +89,15 @@ function App() {
         <Route path="/services" element={<Services theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/trainings" element={<Trainings theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/contact" element={<Contact theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route path="/casestudies" element={<Casestudies theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route path="/casestudies/casestudy1" element={<Casestudy_1 />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/blog/Optimization_Modeling_for_Store_Product_Clustering_and_EOQ_Determination" element={<Article_1 />} />
+        <Route path="/blog/Weighted_Least_Square" element={<Article_2 />} />
+        <Route path="/blog/Shapley_Value_Regression" element={<Article_3 />} />
+        <Route path="/blog/Changes_in_air_pollution" element={<Article_4 />} />
+        <Route path="/blog/Outlier_Detection_in_Air_Pollution_Data" element={<Article_5 />} />
+        <Route path="/blog/Propensity_Score_Matching" element={<Article_6 />} />
         <Route path="/projects/Project_2" element={<Project_2 />} />
         <Route path="/projects/Project_3" element={<Project_3 />} />
         <Route path="/projects/Project_4" element={<Project_4 />} />
@@ -120,7 +137,7 @@ function App() {
 
         <Footer />
     
-        </Auth0ProviderWithHistory>
+        {/* </Auth0ProviderWithHistory> */}
 
     </>  
     

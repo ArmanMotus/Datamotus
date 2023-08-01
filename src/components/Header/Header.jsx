@@ -95,7 +95,7 @@ const Header = ({ theme, toggleTheme }) => {
           </span>
         </div>
       </div>
-{/* 
+
       {!isLoading && !user && (
         <button className="button" onClick={()=> loginWithRedirect()}>
           Login
@@ -106,7 +106,7 @@ const Header = ({ theme, toggleTheme }) => {
         <button className="button" onClick={()=> logout()}>
           Logout
         </button>
-      )} */}
+      )}
       
     </header>
   );
