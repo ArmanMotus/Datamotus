@@ -3,8 +3,12 @@ import '../../styles/casestudies.css';
 import BackButton from './Scrolling/Back';
 import { useNavigate } from "react-router-dom";
 
+// const casestudiesData = [
+//   { icon: 'ri-bank-fill', title: "Bank customers clustering based on transaction", link: 'casestudy1', desc: "Brief description of case study 1" },
+// ];
+
 const casestudiesData = [
-  { icon: 'ri-bank-fill', title: "Case Study 1", link: 'casestudy1', desc: "Brief description of case study 1" },
+  { icon: 'ri-bank-fill', title: "Bank customers clustering based on transaction", link: 'casestudy1'},
 ];
 
 const Casestudies = () => {

@@ -31,9 +31,10 @@ const nav__links = [
     display: 'Blog'
   },
   {
-    path: '#/contact',
-    display: 'Contact us'
-  }
+    path: '#/casestudies',
+    display: 'Case Studies'
+  },
+ 
 ];
 
 const Header = ({ theme, toggleTheme }) => {
