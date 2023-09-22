@@ -9,7 +9,7 @@ const Casestudy_1 = () => {
       <div><BackButton /></div>     
           <div className='about__wrapper'>
               <div>
-                  <h5 className='subtitle_services'>Bank Customers Clustering Based on Transaction Categories</h5>
+                  <h5 className='subtitle_services'>Bank Customers Clustering Based on Transaction</h5>
                   <br></br>
   
                   {/* Background */}
