@@ -8,7 +8,7 @@ import { useNavigate } from "react-router-dom";
 // ];
 
 const casestudiesData = [
-  { icon: 'ri-bank-fill', title: "Bank customers clustering based on transaction", link: 'casestudy1'},
+  { icon: 'ri-bank-fill', title: "Bank Customers Clustering Based on Transaction Categories", link: 'casestudy1'},
 ];
 
 const Casestudies = () => {
