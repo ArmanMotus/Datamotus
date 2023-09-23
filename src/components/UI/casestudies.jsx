@@ -9,6 +9,8 @@ import { useNavigate } from "react-router-dom";
 
 const casestudiesData = [
   { icon: 'ri-bank-fill', title: "Bank Customers Clustering Based on Transaction Categories", link: 'casestudy1'},
+  { icon: 'ri-settings-5-line', title: "AI-Driven Market Segmentation: Discovering Intelligent Profiling for Effective Market Segmentation", link: 'casestudy2'},
+
 ];
 
 const Casestudies = () => {

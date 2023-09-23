@@ -28,6 +28,7 @@ import Article_6 from './components/Blog_details/Blog6'
 import Contact from './components/UI/Contact'
 import Casestudies from './components/UI/casestudies';
 import Casestudy_1 from './components/CaseStudies_details/casestudy1';
+import Casestudy_2 from './components/CaseStudies_details/casestudy2';
 import Project_2 from './components/Project_details/Project_2'
 import Project_3 from './components/Project_details/Project_3'
 import Project_4 from './components/Project_details/Project_4'
@@ -91,6 +92,7 @@ function App() {
         <Route path="/contact" element={<Contact theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/casestudies" element={<Casestudies theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/casestudies/casestudy1" element={<Casestudy_1 />} />
+        <Route path="/casestudies/casestudy2" element={<Casestudy_2 />} />
         <Route path="/blog" element={<Blog />} />
         <Route path="/blog/Optimization_Modeling_for_Store_Product_Clustering_and_EOQ_Determination" element={<Article_1 />} />
         <Route path="/blog/Weighted_Least_Square" element={<Article_2 />} />

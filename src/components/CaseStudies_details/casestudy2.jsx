@@ -9,14 +9,14 @@ const Casestudy_1 = () => {
       <div><BackButton /></div>     
           <div className='about__wrapper'>
               <div>
-                  <h5 className='subtitle_services'>Bank Customers Clustering Based on Transaction Categories</h5>
+                  <h5 className='subtitle_services'>AI-Driven Market Segmentation: Discovering Intelligent Profiling for Effective Market Segmentation </h5>
                   <br></br>
   
                   {/* Background */}
                   <h2 className='subheader'>Description: 
                   <p className='description about__content-desc'> 
-                  In our latest case study, we delve into the transformative power of cluster analysis in the banking sector. Through a meticulous analysis, we've explored how segmenting bank customers based on transactional behaviors and demographics can significantly enhance profitability and refine marketing strategies. This comprehensive study not only reveals insightful patterns and trends but also provides actionable strategies for financial institutions. By harnessing the potential of data-driven insights, banks can offer more personalized services, attract new customers, and promote specific products more effectively. 
-                  Dive into our findings to discover how modern data analytics can revolutionize customer engagement and drive business growth.
+                  Discover the power of AI-driven market segmentation with Datamotus' latest case study. Dive deep into the world of intelligent profiling and understand how effective market segmentation can revolutionize your business approach. 
+                  Leveraging advanced technologies like LLM, this case study showcases the seamless integration of ChatGPT with marketing analytics, offering businesses a competitive edge in understanding and targeting their audience.
                   </p>
                   </h2>
                   <br></br> <br></br>
@@ -32,7 +32,7 @@ const Casestudy_1 = () => {
    */}
                   {/* Download Button */}
                   <div style={{ marginTop: "20px" }}>
-                      <a href={`${process.env.PUBLIC_URL}/Bank customers clustering based on transaction categories.pdf`} 
+                      <a href={`${process.env.PUBLIC_URL}/AI-Driven-Seg-Presentation.pdf`} 
                          download 
                          className='back-button'>
                           <span className='back-icon'></span>
