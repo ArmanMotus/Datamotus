@@ -58,8 +58,8 @@ import Ameria from './components/Training_details/Ameria';
 import VIVA from './components/Training_details/VIVA'
 
 
-ReactGA.initialize('G-24SGYL6ND2');
-
+//ReactGA.initialize('G-24SGYL6ND2');
+ReactGA.initialize('G-8GV87DJL6E');
 
 function App() {
   const location = useLocation();
