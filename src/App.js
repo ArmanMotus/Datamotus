@@ -59,7 +59,7 @@ import VIVA from './components/Training_details/VIVA'
 
 
 //ReactGA.initialize('G-24SGYL6ND2');
-ReactGA.initialize('G-8GV87DJL6E');
+ReactGA.initialize('G-8GV87DJL6E', { debug: true });
 
 function App() {
   const location = useLocation();
@@ -69,9 +69,13 @@ function App() {
     theme === '' ? setTheme('light-theme') : setTheme('')
   }
 
-  useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
-  }, [location]);
+  // Track page views including the hash
+useEffect(() => {
+  const pagePath = location.pathname + location.search + location.hash;
+  ReactGA.set({ page: pagePath }); // Set the page explicitly with hash
+  ReactGA.pageview(pagePath); // Send the pageview event
+}, [location]);
+
   return (      
   
     <>   
