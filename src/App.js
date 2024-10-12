@@ -7,7 +7,6 @@ import ReactGA from 'react-ga';
 import { useLocation } from 'react-router-dom';
 // import Auth0ProviderWithHistory from "./auth0Provider";
 
-
 import './App.css';
 
 import Header from './components/Header/Header';
