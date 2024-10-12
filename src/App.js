@@ -57,7 +57,10 @@ import VIVA from './components/Training_details/VIVA'
 
 //ReactGA.initialize('G-24SGYL6ND2');
 // Google Analytics initialization
-ReactGA.initialize('G-8GV87DJL6E');
+ReactGA.initialize('G-8GV87DJL6E', { debug: true });
+
+// Then use pageview tracking
+ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
 
 function App() {
   const [theme, setTheme] = useState('')
@@ -68,23 +71,11 @@ function App() {
 
   // Manually track pageviews on hash changes
   useEffect(() => {
-    const trackPageView = () => {
-      const currentPath = window.location.pathname + window.location.search + window.location.hash;
-      ReactGA.pageview(currentPath);
-    };
-
-    // Track initial page load
-    trackPageView();
-
-    // Add event listener for hash changes
-    window.addEventListener('hashchange', trackPageView);
-
-    // Cleanup event listener on component unmount
-    return () => {
-      window.removeEventListener('hashchange', trackPageView);
-    };
-  }, []);
-
+    const currentPath = window.location.pathname + window.location.search + window.location.hash;
+    console.log("Tracking page view for: ", currentPath); // Debugging
+    ReactGA.pageview(currentPath);
+  }, [location]);
+  
   return (      
   
     <>   
