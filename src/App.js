@@ -59,23 +59,21 @@ import VIVA from './components/Training_details/VIVA'
 // Google Analytics initialization
 ReactGA.initialize('G-8GV87DJL6E', { debug: true });
 
-// Then use pageview tracking
-ReactGA.pageview(window.location.pathname + window.location.search + window.location.hash);
-
 function App() {
-  const [theme, setTheme] = useState('')
+  const location = useLocation();  // Use useLocation to get the current path
+  const [theme, setTheme] = useState('');
 
   const toggleTheme = () => {
-    theme === '' ? setTheme('light-theme') : setTheme('')
-  }
+    theme === '' ? setTheme('light-theme') : setTheme('');
+  };
 
-  // Manually track pageviews on hash changes
+  // Manually track pageviews on route change
   useEffect(() => {
-    const currentPath = window.location.pathname + window.location.search + window.location.hash;
+    const currentPath = location.pathname + location.search + location.hash;
     console.log("Tracking page view for: ", currentPath); // Debugging
-    ReactGA.pageview(currentPath);
-  }, [location]);
-  
+    ReactGA.pageview(currentPath);  // Log page view for Google Analytics
+  }, [location]);  // Effect runs when the location changes
+
   return (      
   
     <>   
