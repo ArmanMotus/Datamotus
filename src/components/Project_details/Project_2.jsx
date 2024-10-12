@@ -7,7 +7,7 @@ import ReactGA from 'react-ga';
 const Project_2 = () => {
   // UseEffect to track pageview with ReactGA
   useEffect(() => {
-    ReactGA.pageview(window.location.pathname + window.location.search); // Track the page view
+    ReactGA.pageview('/projects/Project_2');
   }, []);
 
   return (
