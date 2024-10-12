@@ -1,8 +1,12 @@
-import React, { useState, useEffect } from 'react';
+
+import React, {useState,useEffect} from 'react';
 import ScrollToTop from './components/UI/Scrolling/Scroll';
-import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import BackButton from '../src/components/UI/Scrolling/Back';
 import ReactGA from 'react-ga';
+import { useLocation } from 'react-router-dom';
+// import Auth0ProviderWithHistory from "./auth0Provider";
+
 
 import './App.css';
 
@@ -14,31 +18,32 @@ import About from './components/UI/About';
 import Services from './components/UI/Services';
 import Trainings from './components/UI/Training';
 import Blog from './components/UI/blog';
-import Article_1 from './components/Blog_details/Blog1';
-import Article_2 from './components/Blog_details/Blog2';
-import Article_3 from './components/Blog_details/Blog3';
-import Article_4 from './components/Blog_details/Blog4';
-import Article_5 from './components/Blog_details/Blog5';
-import Article_6 from './components/Blog_details/Blog6';
-import Contact from './components/UI/Contact';
+import Article_1 from './components/Blog_details/Blog1'
+import Article_2 from './components/Blog_details/Blog2'
+import Article_3 from './components/Blog_details/Blog3'
+import Article_4 from './components/Blog_details/Blog4'
+import Article_5 from './components/Blog_details/Blog5'
+import Article_6 from './components/Blog_details/Blog6'
+
+import Contact from './components/UI/Contact'
 import Casestudies from './components/UI/casestudies';
 import Casestudy_1 from './components/CaseStudies_details/casestudy1';
 import Casestudy_2 from './components/CaseStudies_details/casestudy2';
-import Project_2 from './components/Project_details/Project_2';
-import Project_3 from './components/Project_details/Project_3';
-import Project_4 from './components/Project_details/Project_4';
-import Project_5 from './components/Project_details/Project_5';
-import Project_6 from './components/Project_details/Project_6';
-import Project_7 from './components/Project_details/Project_7';
-import Project_8 from './components/Project_details/Project_8';
-import Project_9 from './components/Project_details/Project_9';
-import Project_10 from './components/Project_details/Project_10';
-import Project_11 from './components/Project_details/Project_11';
-import Project_12 from './components/Project_details/Project_12';
-import Project_13 from './components/Project_details/Project_13';
-import Project_14 from './components/Project_details/Project_14';
-import Project_15 from './components/Project_details/Project_15';
-import Project_16 from './components/Project_details/Project_16';
+import Project_2 from './components/Project_details/Project_2'
+import Project_3 from './components/Project_details/Project_3'
+import Project_4 from './components/Project_details/Project_4'
+import Project_5 from './components/Project_details/Project_5'
+import Project_6 from './components/Project_details/Project_6'
+import Project_7 from './components/Project_details/Project_7'
+import Project_8 from './components/Project_details/Project_8'
+import Project_9 from './components/Project_details/Project_9'
+import Project_10 from './components/Project_details/Project_10'
+import Project_11 from './components/Project_details/Project_11'
+import Project_12 from './components/Project_details/Project_12'
+import Project_13 from './components/Project_details/Project_13'
+import Project_14 from './components/Project_details/Project_14'
+import Project_15 from './components/Project_details/Project_15'
+import Project_16 from './components/Project_details/Project_16'
 import Armstat from './components/Training_details/Armstat';
 import Byblos from './components/Training_details/Byblos';
 import CRRC from './components/Training_details/CRRC';
@@ -48,39 +53,44 @@ import Microsoft from './components/Training_details/Microsoft';
 import RA from './components/Training_details/RA';
 import WVA from './components/Training_details/WVA';
 import Digitain from './components/Training_details/Digitain';
-import Ameria from './components/Training_details/Ameria';
-import VIVA from './components/Training_details/VIVA';
 
-ReactGA.initialize('G-8GV87DJL6E'); // Initialize Google Analytics
+import Ameria from './components/Training_details/Ameria';
+import VIVA from './components/Training_details/VIVA'
+
+
+//ReactGA.initialize('G-24SGYL6ND2');
+ReactGA.initialize('G-8GV87DJL6E');
 
 function App() {
   const location = useLocation();
-  const [theme, setTheme] = useState('');
+  const [theme, setTheme] = useState('')
 
-  const toggleTheme = () => {
-    setTheme(theme === '' ? 'light-theme' : '');
-  };
+  const toggleTheme = ()=>{
+    theme === '' ? setTheme('light-theme') : setTheme('')
+  }
 
-// Track page views including the hash (for pages with fragments)
-useEffect(() => {
-  const pagePath = location.pathname + location.search + location.hash;
-  ReactGA.set({ page: pagePath }); // Explicitly set the current page
-  ReactGA.pageview(pagePath); // Send a pageview event
-}, [location]);
+  useEffect(() => {
+    ReactGA.pageview(location.pathname + location.search);
+  }, [location]);
+  return (      
+  
+    <>   
+        {/* <Auth0ProviderWithHistory> */}
 
-  return (
-    <>
-      <ScrollToTop />
-      <Header theme={theme} toggleTheme={toggleTheme} />
+        <ScrollToTop />
 
+        <Header theme={theme} toggleTheme={toggleTheme} />
+        
+      
       <Routes>
-        <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme} />} />
-        <Route path="/projects" element={<Projects theme={theme} toggleTheme={toggleTheme} />} />
-        <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme} />} />
-        <Route path="/services" element={<Services theme={theme} toggleTheme={toggleTheme} />} />
-        <Route path="/trainings" element={<Trainings theme={theme} toggleTheme={toggleTheme} />} />
-        <Route path="/contact" element={<Contact theme={theme} toggleTheme={toggleTheme} />} />
-        <Route path="/casestudies" element={<Casestudies theme={theme} toggleTheme={toggleTheme} />} />
+      
+        <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route path="/projects" element={<Projects theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route path="/services" element={<Services theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route path="/trainings" element={<Trainings theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route path="/contact" element={<Contact theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route path="/casestudies" element={<Casestudies theme={theme} toggleTheme={toggleTheme}/>} />
         <Route path="/casestudies/casestudy1" element={<Casestudy_1 />} />
         <Route path="/casestudies/casestudy2" element={<Casestudy_2 />} />
         <Route path="/blog" element={<Blog />} />
@@ -105,21 +115,38 @@ useEffect(() => {
         <Route path="/projects/Project_14" element={<Project_14 />} />
         <Route path="/projects/Project_15" element={<Project_15 />} />
         <Route path="/projects/Project_16" element={<Project_16 />} />
-        <Route path="/trainings/armstat" element={<Armstat />} />
-        <Route path="/trainings/Byblos" element={<Byblos />} />
-        <Route path="/trainings/CRRC" element={<CRRC />} />
-        <Route path="/trainings/HMC" element={<HMC />} />
-        <Route path="/trainings/Europe" element={<Europe />} />
-        <Route path="/trainings/Microsoft" element={<Microsoft />} />
-        <Route path="/trainings/RA" element={<RA />} />
-        <Route path="/trainings/WVA" element={<WVA />} />
-        <Route path="/trainings/Digitain" element={<Digitain />} />
-        <Route path="/trainings/Ameria" element={<Ameria />} />
-        <Route path="/trainings/VIVA" element={<VIVA />} />
+        <Route path="Project_2" element={<Project_2 />} />  
+        <Route path="Project_3" element={<Project_3 />} /> 
+        <Route path="Project_6" element={<Project_6 />} />   
+        <Route path="Project_4" element={<Project_4 />} />  
+        <Route path="Project_5" element={<Project_5 />} />  
+        <Route path="Project_14" element={<Project_14 />} />  
+        <Route path="Project_15" element={<Project_15 />} />  
+        <Route path="Project_16" element={<Project_16 />} /> 
+        <Route path="/trainings/armstat" element={<Armstat />} /> 
+        <Route path="/trainings/Byblos" element={<Byblos />} /> 
+        <Route path="/trainings/CRRC" element={<CRRC />} /> 
+        <Route path="/trainings/HMC" element={<HMC />} /> 
+        <Route path="/trainings/Europe" element={<Europe />} /> 
+        <Route path="/trainings/Microsoft" element={<Microsoft />} /> 
+        <Route path="/trainings/RA" element={<RA />} /> 
+        <Route path="/trainings/WVA" element={<WVA />} /> 
+        <Route path="/trainings/Digitain" element={<Digitain />} /> 
+        <Route path="/trainings/Ameria" element={<Ameria />} /> 
+        <Route path="/trainings/VIVA" element={<VIVA />} /> 
+
       </Routes>
 
-      <Footer />
-    </>
+        <Footer />
+    
+        {/* </Auth0ProviderWithHistory> */}
+
+    </>  
+    
+    
+      
+      
+      
   );
 }
 
