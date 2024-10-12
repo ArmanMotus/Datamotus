@@ -70,8 +70,10 @@ function App() {
   }
 
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
+    const path = location.pathname + location.search + window.location.hash;
+    ReactGA.pageview(path);
   }, [location]);
+  
   return (      
   
     <>   
