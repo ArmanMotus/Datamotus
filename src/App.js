@@ -1,13 +1,6 @@
-
-import React, {useState,useEffect} from 'react';
-import ScrollToTop from './components/UI/Scrolling/Scroll';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
-import BackButton from '../src/components/UI/Scrolling/Back';
+import React, { useState, useEffect } from 'react';
+import { BrowserRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
 import ReactGA from 'react-ga';
-import { useLocation } from 'react-router-dom';
-// import Auth0ProviderWithHistory from "./auth0Provider";
-
-
 import './App.css';
 
 import Header from './components/Header/Header';
@@ -18,18 +11,17 @@ import About from './components/UI/About';
 import Services from './components/UI/Services';
 import Trainings from './components/UI/Training';
 import Blog from './components/UI/blog';
-import Article_1 from './components/Blog_details/Blog1'
-import Article_2 from './components/Blog_details/Blog2'
-import Article_3 from './components/Blog_details/Blog3'
-import Article_4 from './components/Blog_details/Blog4'
-import Article_5 from './components/Blog_details/Blog5'
-import Article_6 from './components/Blog_details/Blog6'
-
-import Contact from './components/UI/Contact'
+import Article_1 from './components/Blog_details/Blog1';
+import Article_2 from './components/Blog_details/Blog2';
+import Article_3 from './components/Blog_details/Blog3';
+import Article_4 from './components/Blog_details/Blog4';
+import Article_5 from './components/Blog_details/Blog5';
+import Article_6 from './components/Blog_details/Blog6';
+import Contact from './components/UI/Contact';
 import Casestudies from './components/UI/casestudies';
 import Casestudy_1 from './components/CaseStudies_details/casestudy1';
 import Casestudy_2 from './components/CaseStudies_details/casestudy2';
-import Project_2 from './components/Project_details/Project_2'
+import Project_2 from './components/Project_details/Project_2';
 import Project_3 from './components/Project_details/Project_3'
 import Project_4 from './components/Project_details/Project_4'
 import Project_5 from './components/Project_details/Project_5'
@@ -63,34 +55,28 @@ ReactGA.initialize('G-8GV87DJL6E');
 
 function App() {
   const location = useLocation();
-  const [theme, setTheme] = useState('')
+  const [theme, setTheme] = useState('');
 
-  const toggleTheme = ()=>{
-    theme === '' ? setTheme('light-theme') : setTheme('')
-  }
+  const toggleTheme = () => {
+    theme === '' ? setTheme('light-theme') : setTheme('');
+  };
 
+  // Track page views using ReactGA when the location changes
   useEffect(() => {
     ReactGA.pageview(location.pathname + location.search);
   }, [location]);
-  return (      
-  
-    <>   
-        {/* <Auth0ProviderWithHistory> */}
 
-        <ScrollToTop />
-
-        <Header theme={theme} toggleTheme={toggleTheme} />
-        
-      
+  return (
+    <>
+      <Header theme={theme} toggleTheme={toggleTheme} />
       <Routes>
-      
-        <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme}/>} />
-        <Route path="/projects" element={<Projects theme={theme} toggleTheme={toggleTheme}/>} />
-        <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme}/>} />
-        <Route path="/services" element={<Services theme={theme} toggleTheme={toggleTheme}/>} />
-        <Route path="/trainings" element={<Trainings theme={theme} toggleTheme={toggleTheme}/>} />
-        <Route path="/contact" element={<Contact theme={theme} toggleTheme={toggleTheme}/>} />
-        <Route path="/casestudies" element={<Casestudies theme={theme} toggleTheme={toggleTheme}/>} />
+        <Route path="/" element={<Home theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/projects" element={<Projects theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/about" element={<About theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/services" element={<Services theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/trainings" element={<Trainings theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/contact" element={<Contact theme={theme} toggleTheme={toggleTheme} />} />
+        <Route path="/casestudies" element={<Casestudies theme={theme} toggleTheme={toggleTheme} />} />
         <Route path="/casestudies/casestudy1" element={<Casestudy_1 />} />
         <Route path="/casestudies/casestudy2" element={<Casestudy_2 />} />
         <Route path="/blog" element={<Blog />} />
