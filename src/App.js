@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import ScrollToTop from './components/UI/Scrolling/Scroll';
-import { HashRouter as Router, Routes, Route, useLocation } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, useLocation } from "react-router-dom";
+import BackButton from '../src/components/UI/Scrolling/Back';
 import ReactGA from 'react-ga';
 
 import './App.css';
@@ -52,22 +53,22 @@ import VIVA from './components/Training_details/VIVA';
 
 ReactGA.initialize('G-8GV87DJL6E'); // Initialize Google Analytics
 
-const App = () => {
+function App() {
   const location = useLocation();
   const [theme, setTheme] = useState('');
 
-  // Function to toggle the theme
   const toggleTheme = () => {
     setTheme(theme === '' ? 'light-theme' : '');
   };
 
-  // Trigger GA pageview every time the location changes
+  // Track page views including the hash (for pages with fragments)
   useEffect(() => {
-    ReactGA.pageview(location.pathname + location.search);
+    const pagePath = location.pathname + location.search + location.hash;
+    ReactGA.pageview(pagePath);
   }, [location]);
 
   return (
-    <Router>
+    <>
       <ScrollToTop />
       <Header theme={theme} toggleTheme={toggleTheme} />
 
@@ -117,7 +118,7 @@ const App = () => {
       </Routes>
 
       <Footer />
-    </Router>
+    </>
   );
 }
 
