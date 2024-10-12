@@ -61,11 +61,12 @@ function App() {
     setTheme(theme === '' ? 'light-theme' : '');
   };
 
-  // Track page views including the hash (for pages with fragments)
-  useEffect(() => {
-    const pagePath = location.pathname + location.search + location.hash;
-    ReactGA.pageview(pagePath);
-  }, [location]);
+// Track page views including the hash (for pages with fragments)
+useEffect(() => {
+  const pagePath = location.pathname + location.search + location.hash;
+  ReactGA.set({ page: pagePath }); // Explicitly set the current page
+  ReactGA.pageview(pagePath); // Send a pageview event
+}, [location]);
 
   return (
     <>
