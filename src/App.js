@@ -1,12 +1,9 @@
-
-import React, {useState,useEffect} from 'react';
+import React, { useState, useEffect } from 'react';
+import { HashRouter as Router, Routes, Route, useLocation } from "react-router-dom";
 import ScrollToTop from './components/UI/Scrolling/Scroll';
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom"
 import BackButton from '../src/components/UI/Scrolling/Back';
 import ReactGA from 'react-ga';
-import { useLocation } from 'react-router-dom';
-// import Auth0ProviderWithHistory from "./auth0Provider";
-
+import './App.css';
 
 import './App.css';
 
@@ -59,21 +56,35 @@ import VIVA from './components/Training_details/VIVA'
 
 
 //ReactGA.initialize('G-24SGYL6ND2');
+// Google Analytics initialization
 ReactGA.initialize('G-8GV87DJL6E');
 
 function App() {
-  const location = useLocation();
   const [theme, setTheme] = useState('')
 
-  const toggleTheme = ()=>{
+  const toggleTheme = () => {
     theme === '' ? setTheme('light-theme') : setTheme('')
   }
 
+  // Manually track pageviews on hash changes
   useEffect(() => {
-    const path = location.pathname + location.search + window.location.hash;
-    ReactGA.pageview(path);
-  }, [location]);
-  
+    const trackPageView = () => {
+      const currentPath = window.location.pathname + window.location.search + window.location.hash;
+      ReactGA.pageview(currentPath);
+    };
+
+    // Track initial page load
+    trackPageView();
+
+    // Add event listener for hash changes
+    window.addEventListener('hashchange', trackPageView);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener('hashchange', trackPageView);
+    };
+  }, []);
+
   return (      
   
     <>   
