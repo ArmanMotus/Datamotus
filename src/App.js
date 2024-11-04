@@ -46,6 +46,7 @@ import RA from './components/Training_details/RA';
 import WVA from './components/Training_details/WVA';
 import Digitain from './components/Training_details/Digitain';
 
+
 import Ameria from './components/Training_details/Ameria';
 import VIVA from './components/Training_details/VIVA'
 
